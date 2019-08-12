@@ -3,19 +3,22 @@ import { Link } from 'react-router-dom';
 
 const SaleItem = (props) => {
 
-    console.log(props.saleItem);
-
     if(!props.saleItem){
         return "Loading..."
     }
 
     const url = "/saleitems/" + props.saleItem.id;
 
+    String.prototype.capitalize = function() {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    }
+
     return (
         <React.Fragment>
             <Link to={url} className='name'>{props.saleItem.itemName} in {props.saleItem.location} </Link>
-            <p>Item: {props.saleItem.itemName} </p>
-            <p>Location: {props.saleItem.location}</p>
+            <p>Item: {props.saleItem.itemName.capitalize()}</p>
+            <p>Location: {props.saleItem.location.capitalize()}</p>
+            <p>Barter for: {props.saleItem.barter.capitalize()}</p>
         </React.Fragment>
     )
 };

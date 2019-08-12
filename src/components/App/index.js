@@ -13,7 +13,6 @@ import MainContainer from '../../containers/MainContainer';
 
 import * as ROUTES from '../../constants/routes';
 import  { withAuthentication } from '../Session';
-// import SaleItemList from "../SaleItems/SaleItemList";
 
 const App = () => (
     <Router>
@@ -24,7 +23,6 @@ const App = () => (
             <hr />
 
             <div>
-                {/*<MainContainer/>*/}
             </div>
 
             <Route exact path={ROUTES.LANDING} component={LandingPage} />

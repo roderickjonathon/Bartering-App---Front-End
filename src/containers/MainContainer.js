@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Request from '../helpers/request.js'
 // import UserList from '../components/users/UserList'
 import SaleItemList from '../components/SaleItems/SaleItemList';
+import {withFirebase} from "../components/Firebase";
+import withAuthorization from "../components/Session/withAuthorization";
 // import NavBar from "../NavBar";
 
 
@@ -61,7 +63,6 @@ class MainContainer extends Component {
                     <React.Fragment>
                         <Switch>
                             <Route exact path="/saleitems" render={ (props) => {
-                                // console.log("HERERERE:", this.state.saleItems);
                             return <SaleItemList saleItems={this.state.saleItems}/>
                             }}/>
                         </Switch>
@@ -76,5 +77,7 @@ class MainContainer extends Component {
 
 }
 
+const condition = authUser => !!authUser;
 
-export default MainContainer;
+
+export default withAuthorization(condition)(MainContainer);
