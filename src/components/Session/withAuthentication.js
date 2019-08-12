@@ -23,11 +23,12 @@ const withAuthentication = Component => {
         // once singed out, authUser is set to null which is assigned at global level in the state, therefore passing down
         // property to child components via props.
         componentDidMount() {
-            this.listener = this.props.firebase.auth.onAuthStateChanged(
+            this.listener = this.props.firebase.onAuthUserListener(
                 authUser => {
-                    authUser
-                        ? this.setState({authUser})
-                        : this.setState({authUser: null});
+                    this.setState({ authUser });
+                },
+                () => {
+                    this.setState({ authUser: null });
                 },
             );
         }

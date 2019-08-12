@@ -6,7 +6,7 @@ import { withAuthorization } from '../Session';
 const HomePage = () => (
     <div>
         <h1>Home Page</h1>
-        <h1> The Home Page is accessible by ever signed in user </h1>
+        <h1> Hi there </h1>
     </div>
 );
 

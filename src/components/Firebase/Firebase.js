@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+// import * as ROLES from '../../constants/roles';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCr8gBHm224pW9BbqKgT6KB1oOyt2SC6Hg",
@@ -41,6 +42,36 @@ class Firebase {
     //password change
     doPassWordUpdate = password =>
         this.auth.currentUser.updatePassword(password);
+
+    onAuthUserListener = (next, fallback) =>
+        this.auth.onAuthStateChanged(authUser => {
+            if (authUser) {
+                this.user(authUser.uid)
+                    .once('value')
+                    .then(snapshot => {
+                        const dbUser = snapshot.val();
+
+                        // default empty roles
+                        if (!dbUser.roles) {
+                            dbUser.roles = {};
+                        }
+
+                        // merge auth and db user
+                        authUser = {
+                            uid: authUser.uid,
+                            email: authUser.email,
+                            ...dbUser,
+                        };
+
+                        next(authUser);
+                    });
+            } else {
+                fallback();
+            }
+        });
+
+
+
 
     // the paths in the ref() method match the location where users will be stored in Firebase API which follows REST philosophy
     user = uid => this.db.ref(`users/${uid}`);

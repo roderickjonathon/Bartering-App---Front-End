@@ -13,12 +13,13 @@ const withAuthorization = condition => Component => {
         // if it authorization fails, the user is redirected to sign-in page.
         // if it passes, it does nothing and continues to render the chosen component
         componentDidMount() {
-            this.listener = this.props.firebase.auth.onAuthStateChanged(
+            this.listener = this.props.firebase.onAuthUserListener(
                 authUser => {
-                    if (!condition(authUser)){
+                    if (!condition(authUser)) {
                         this.props.history.push(ROUTES.SIGN_IN);
                     }
                 },
+                () => this.props.history.push(ROUTES.SIGN_IN),
             );
         }
 

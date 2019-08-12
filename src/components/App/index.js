@@ -18,6 +18,7 @@ const App = () => (
         <div>
             <Navigation />
 
+
             <hr />
 
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
@@ -31,6 +32,7 @@ const App = () => (
             <Route path={ROUTES.ACCOUNT} component={AccountPage} />
             <Route path={ROUTES.ADMIN} component={AdminPage} />
         </div>
+
     </Router>
 );
 
