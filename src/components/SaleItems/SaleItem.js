@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 const SaleItem = (props) => {
 
+    console.log(props.saleItem);
+
     if(!props.saleItem){
         return "Loading..."
     }

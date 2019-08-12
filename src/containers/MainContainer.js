@@ -26,9 +26,9 @@ class MainContainer extends Component {
             const promise2 = request.get('/saleItems');
 
             const promises = [promise1, promise2];
-            console.log(promise1);
-            console.log(promise2);
 
+            // console.log(promise1);
+            // console.log(promise2)
             Promise.all(promises).then(data => {
                 // console.log(data);
                 this.setState({

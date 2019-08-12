@@ -1,22 +1,22 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import SaleItem from './SaleItem.js';
 
 
 const SaleItemList = (props) => {
-
-    console.log(props.saleItems);
+    // console.log(props.saleItems);
 
         if (props.saleItems) {
             return (
-                <React.Fragment>
+                <Fragment>
                     <ul className="component-list">
+                        {console.log(props.saleItems)  }
 
                         {props.saleItems.map((saleItem, index) => {
                             return (
                                 <li key={index} className="component-item">
                                     <div className="component">
-
-                                        <SaleItem saleitem={saleItem}/>
+                                        <p>Item:</p>
+                                        <SaleItem saleItem={saleItem}/>
                                     </div>
                                 </li>
                             )
@@ -26,13 +26,9 @@ const SaleItemList = (props) => {
 
 
                     </ul>
-                </React.Fragment>
+                </Fragment>
             )
         }
-
-
-
-
 
     };
 export default SaleItemList;
