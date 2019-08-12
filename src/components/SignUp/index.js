@@ -36,6 +36,15 @@ class SignUpFormBase extends Component {
         this.props.firebase
             .doCreateUserWithEmailAndPassword(email, passwordOne)
             .then(authUser => {
+                    //  if  doCreate function is successful, creates a user in the database
+                    return this.props.firebase
+                        .user(authUser.user.uid)
+                        .set({
+                            username,
+                            email,
+                        });
+                })
+            .then(() => {
                 this.setState({ ...INITIAL_STATE});
                 //user Router to redirect to homepage
                 this.props.history.push(ROUTES.HOME)

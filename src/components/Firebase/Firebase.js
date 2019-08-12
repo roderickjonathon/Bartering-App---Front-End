@@ -1,5 +1,6 @@
 import app from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/database';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCr8gBHm224pW9BbqKgT6KB1oOyt2SC6Hg",
@@ -21,6 +22,8 @@ class Firebase {
         app.initializeApp(firebaseConfig);
 
         this.auth = app.auth();
+        //intializes database connection
+        this.db = app.database();
     }
     //create user function - uses Firebase API to authenticate
     doCreateUserWithEmailAndPassword = (email, password) =>
@@ -39,6 +42,12 @@ class Firebase {
     //password change
     doPassWordUpdate = password =>
         this.auth.currentUser.updatePassword(password);
+
+    // the paths in the ref() method match the location where users will be stored in Firebase API which follows REST philosophy
+    user = uid => this.db.ref(`users/${uid}`);
+    users = () => this.db.ref('users');
+
+
 }
 
 export default Firebase;

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Session/withAuthorization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PasswordChange/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordChange/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PasswordForget/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordForget/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignIn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Session/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +63,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565528300510</updated>
-      <workItem from="1565528301663" duration="10664000" />
+      <workItem from="1565528301663" duration="11713000" />
+      <workItem from="1565566426199" duration="3026000" />
     </task>
     <servers />
   </component>
@@ -70,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
