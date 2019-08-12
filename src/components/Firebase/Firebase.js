@@ -22,7 +22,6 @@ class Firebase {
         app.initializeApp(firebaseConfig);
 
         this.auth = app.auth();
-        //intializes database connection
         this.db = app.database();
     }
     //create user function - uses Firebase API to authenticate
@@ -46,8 +45,6 @@ class Firebase {
     // the paths in the ref() method match the location where users will be stored in Firebase API which follows REST philosophy
     user = uid => this.db.ref(`users/${uid}`);
     users = () => this.db.ref('users');
-
-
 }
 
 export default Firebase;

@@ -48,10 +48,10 @@ class SignUpFormBase extends Component {
                 this.setState({ ...INITIAL_STATE});
                 //user Router to redirect to homepage
                 this.props.history.push(ROUTES.HOME)
-            })
-            .catch(error => {
-                this.setState({ error })
             });
+            // .catch(error => {
+            //     this.setState({ error })
+            // });
         event.preventDefault();
     };
     //function to set state with inputted values
