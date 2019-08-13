@@ -15,9 +15,9 @@ const SaleItem = (props) => {
 
     return (
         <React.Fragment>
-            <Link to={url} className='name'>{props.saleItem.itemName} in {props.saleItem.location} </Link>
+            <Link to={url} className='name'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
             <p>Item: {props.saleItem.itemName.capitalize()}</p>
-            <p>Location: {props.saleItem.location.capitalize()}</p>
+            {/*<p>Location: {props.saleItem.location.capitalize()}</p>*/}
             <p>Barter for: {props.saleItem.barter.capitalize()}</p>
         </React.Fragment>
     )

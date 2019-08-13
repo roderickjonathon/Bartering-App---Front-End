@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from '../Navigation';
@@ -13,6 +13,14 @@ import MainContainer from '../../containers/MainContainer';
 
 import * as ROUTES from '../../constants/routes';
 import  { withAuthentication } from '../Session';
+
+import './App.css';
+
+import Form from '../Form/Form.js';
+import firebase from 'firebase';
+import firebaseConfig from '../Firebase';
+
+// firebase.initializeApp(firebaseConfig);
 
 const App = () => (
     <Router>
@@ -38,6 +46,8 @@ const App = () => (
         </div>
 
     </Router>
+
+
 );
 
 export default withAuthentication(App);
