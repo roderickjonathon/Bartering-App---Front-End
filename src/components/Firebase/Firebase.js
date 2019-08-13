@@ -1,4 +1,5 @@
 import app from 'firebase/app';
+// import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 // import * as ROLES from '../../constants/roles';
@@ -15,8 +16,6 @@ const firebaseConfig = {
 
 
 //This is the authentication interface for the React components that will connect to the Firebase API.
-
-
 //defines authentication methods
 class Firebase {
     constructor(){
@@ -25,6 +24,7 @@ class Firebase {
         this.auth = app.auth();
         this.db = app.database();
     }
+
     //create user function - uses Firebase API to authenticate
     doCreateUserWithEmailAndPassword = (email, password) =>
         this.auth.createUserWithEmailAndPassword(email, password);
@@ -40,7 +40,7 @@ class Firebase {
     doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
 
     //password change
-    doPassWordUpdate = password =>
+    doPasswordUpdate = password =>
         this.auth.currentUser.updatePassword(password);
 
     onAuthUserListener = (next, fallback) =>
@@ -77,5 +77,6 @@ class Firebase {
     user = uid => this.db.ref(`users/${uid}`);
     users = () => this.db.ref('users');
 }
+
 
 export default Firebase;

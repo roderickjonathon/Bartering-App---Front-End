@@ -8,7 +8,8 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "twilio": "^3.33.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +32,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "redux": "^4.0.4"
+  }
 }

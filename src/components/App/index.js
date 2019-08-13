@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from '../Navigation';
@@ -13,14 +13,8 @@ import MainContainer from '../../containers/MainContainer';
 
 import * as ROUTES from '../../constants/routes';
 import  { withAuthentication } from '../Session';
+// import ChatApp from "../ChatApp/ChatApp";
 
-import './App.css';
-
-import Form from '../Form/Form.js';
-import firebase from 'firebase';
-import firebaseConfig from '../Firebase';
-
-// firebase.initializeApp(firebaseConfig);
 
 const App = () => (
     <Router>
@@ -36,10 +30,9 @@ const App = () => (
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
             <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
             <Route path={ROUTES.SIGN_IN} component={SignInPage} />
-            <Route
-                path={ROUTES.PASSWORD_FORGET}
-                component={PasswordForgetPage} />
-                <Route path={ROUTES.SALEITEMS} component ={MainContainer}/>
+            <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+            <Route path={ROUTES.SALEITEMS} component ={MainContainer}/>
+            {/*<Route path={ROUTES.CHAT} component={ChatApp}/>*/}
             <Route path={ROUTES.HOME} component={HomePage} />
             <Route path={ROUTES.ACCOUNT} component={AccountPage} />
             <Route path={ROUTES.ADMIN} component={AdminPage} />

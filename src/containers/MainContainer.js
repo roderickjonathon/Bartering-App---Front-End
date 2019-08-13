@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Request from '../helpers/request.js'
 // import UserList from '../components/users/UserList'
 import SaleItemList from '../components/SaleItems/SaleItemList';
-import {withFirebase} from "../components/Firebase";
+// import Firebase, {withFirebase} from "../components/Firebase";
 import withAuthorization from "../components/Session/withAuthorization";
 // import NavBar from "../NavBar";
 
