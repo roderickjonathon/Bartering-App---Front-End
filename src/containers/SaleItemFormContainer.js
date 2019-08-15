@@ -35,7 +35,7 @@ class SaleItemFormContainer extends Component {
     };
 
     render(){
-        return <SaleItemForm handleSaleItemPost={this.handleSaleItemPost} fileUploadHandler={this.fileUploadHandler} fileSelectedHandler={this.fileSelectedHandler}/>
+        return <SaleItemForm user={this.props.user} handleSaleItemPost={this.handleSaleItemPost} fileUploadHandler={this.fileUploadHandler} fileSelectedHandler={this.fileSelectedHandler}/>
     }
 }
 const condition = authUser => !!authUser;

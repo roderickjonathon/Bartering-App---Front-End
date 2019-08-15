@@ -19,7 +19,7 @@ const SaleItem = (props) => {
             <p>Item: {props.saleItem.itemName.capitalize()}</p>
             <p>Pic: <img src={props.saleItem.img} alt="pic_image"/> </p>
             <p>Barter for: {props.saleItem.barter.capitalize()}</p>
-            <p>User: {props.user} </p>
+            <p>Email user for barter: {props.saleItem.userEmail}</p>
         </React.Fragment>
     )
 };

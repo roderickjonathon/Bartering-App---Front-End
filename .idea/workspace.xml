@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/SaleItemFormContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SaleItemFormContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SaleItemFormContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +79,7 @@
       <workItem from="1565528301663" duration="11713000" />
       <workItem from="1565566426199" duration="33381000" />
       <workItem from="1565884426023" duration="1514000" />
-      <workItem from="1565889941320" duration="6021000" />
+      <workItem from="1565889941320" duration="6926000" />
     </task>
     <servers />
   </component>

@@ -3,13 +3,15 @@ import firebase from "firebase/app"
 
 const SaleItemForm = (props) => {
 
+
     function handleSubmit(event){
         event.preventDefault();
         const saleItem = {
             "itemName": event.target.itemName.value,
             "location": event.target.location.value,
             "barter": event.target.barter.value,
-            "user":    firebase.getCurrentUser
+            "img": event.target.img.value,
+            "userEmail": props.user
         };
         props.handleSaleItemPost(saleItem);
 
