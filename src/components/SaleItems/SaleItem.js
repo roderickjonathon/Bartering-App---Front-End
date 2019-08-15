@@ -17,8 +17,9 @@ const SaleItem = (props) => {
         <React.Fragment>
             <Link to={url} className='name'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
             <p>Item: {props.saleItem.itemName.capitalize()}</p>
-            {/*<p>Location: {props.saleItem.location.capitalize()}</p>*/}
+            <p>Pic: <img src={props.saleItem.img} alt="pic_image"/> </p>
             <p>Barter for: {props.saleItem.barter.capitalize()}</p>
+            <p>User: {props.user} </p>
         </React.Fragment>
     )
 };

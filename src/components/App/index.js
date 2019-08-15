@@ -32,6 +32,7 @@ const App = () => (
             <Route path={ROUTES.SIGN_IN} component={SignInPage} />
             <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
             <Route path={ROUTES.SALEITEMS} component ={MainContainer}/>
+            <Route path={ROUTES.NEWITEM} component={MainContainer}/>
             {/*<Route path={ROUTES.CHAT} component={ChatApp}/>*/}
             <Route path={ROUTES.HOME} component={HomePage} />
             <Route path={ROUTES.ACCOUNT} component={AccountPage} />

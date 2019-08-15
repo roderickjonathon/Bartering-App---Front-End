@@ -42,6 +42,9 @@ const NavigationAuth = ({ authUser }) => (
         <li>
             <Link to={ROUTES.CHAT}>Chat</Link>
         </li>
+        <li>
+            <Link to={ROUTES.NEWITEM}>Add New Item for Barter</Link>
+        </li>
 
         {/*{authUser.roles.includes(ROLES.ADMIN) && (*/}
         {/*    <li>*/}
