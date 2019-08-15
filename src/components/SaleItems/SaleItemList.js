@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import SaleItem from './SaleItem.js';
 
 
+
 const SaleItemList = (props) => {
 
         if (props.saleItems) {
@@ -14,7 +15,7 @@ const SaleItemList = (props) => {
                                 <li key={index} className="component-item">
                                     <div className="component">
                                         <h3>Item:</h3>
-                                        <SaleItem saleItem={saleItem}/>
+                                        <SaleItem saleItem={saleItem} user={props.user}/>
                                     </div>
                                 </li>
                             )

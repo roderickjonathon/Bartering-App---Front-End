@@ -12,7 +12,8 @@ class MainContainer extends Component {
         super(props);
             this.state = {
                 user:"",
-                saleItems:[]
+                saleItems:[],
+                selectedFile: ""
             };
             this.findSaleItemById = this.findSaleItemById.bind(this);
         }
@@ -30,7 +31,9 @@ class MainContainer extends Component {
 
                     user: this.props.firebase.auth.currentUser.email,
 
-                    saleItems: data[0]._embedded.saleItems
+                    saleItems: data[0]._embedded.saleItems,
+
+                    selectedFile: ""
                 });
 
             })
@@ -56,7 +59,7 @@ class MainContainer extends Component {
                             }}/>
 
                             <Route exact path="/new-item" render={ (props) => {
-                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user}/>
+                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
                             }}/>
                         </Switch>
                     </React.Fragment>

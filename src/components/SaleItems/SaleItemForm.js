@@ -1,5 +1,4 @@
 import React from 'react';
-import firebase from "firebase/app"
 
 const SaleItemForm = (props) => {
 
@@ -15,6 +14,7 @@ const SaleItemForm = (props) => {
         };
         props.handleSaleItemPost(saleItem);
 
+
     }
 
     return (
@@ -24,10 +24,8 @@ const SaleItemForm = (props) => {
                 <input type="text" placeholder="Location" name="location"/>
                 <input type="text" placeholder="What would you like to barter for?" name="barter"/>
                 Select image to upload:
-                <input type="file" onChange={props.fileSelectedHandler} name="fileToUpload" id="fileToUpload"/>
-                    <input onClick={props.fileUploadHandler} type="submit" value="img" name="img"/>
-
-                <button type="submit">Save</button>
+                <input type="file" onChange={props.fileSelectedHandler} value={props.selectedFile} name="img"/>
+                <button type="submit">Submit</button>
             </form>
 
         </div>

@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
 import Request from "../helpers/request";
 import SaleItemForm from "../components/SaleItems/SaleItemForm";
-import withAuthorization from "../components/Session/withAuthorization";
 
 class SaleItemFormContainer extends Component {
 
@@ -21,24 +20,25 @@ class SaleItemFormContainer extends Component {
 
     fileSelectedHandler = event => {
         this.setState({
-            selectedFile: event.target.files[0]
+            selectedFile: event.target.files[0].name.toString()
         })
     };
 
     fileUploadHandler = () => {
         const formData = new FormData();
-        formData.append('img', this.state.selectedFile, this.state.selectedFile.name );
+        formData.append('img', this.state.selectedFile, this.state.selectedFile.name);
         const request = new Request();
         request.post('/saleItems', formData).then(() => {
             window.location = '/saleItems'
         })
     };
 
+
+
     render(){
-        return <SaleItemForm user={this.props.user} handleSaleItemPost={this.handleSaleItemPost} fileUploadHandler={this.fileUploadHandler} fileSelectedHandler={this.fileSelectedHandler}/>
+        return <SaleItemForm user={this.props.user}  handleSaleItemPost={this.handleSaleItemPost} fileUploadHandler={this.fileUploadHandler} fileSelectedHandler={this.fileSelectedHandler}/>
     }
 }
-const condition = authUser => !!authUser;
 
 
-export default withAuthorization(condition)(SaleItemFormContainer);
+export default SaleItemFormContainer;
