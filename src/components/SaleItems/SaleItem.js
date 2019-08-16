@@ -30,9 +30,8 @@ const SaleItem = (props) => {
             <Link to={url} className='name'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
             <p>Item: {props.saleItem.itemName.capitalize()}</p>
             <p>Pic:</p> <img src={picUrl.toString()} alt="pic_image"/>
-            {/*<p>Pic: <img src={newString(props.saleItem.img)} alt="pic_image"/> </p>*/}
-            {/*<p>Pic url: {newString(props.saleItem.img)}</p>*/}
             <p>Looking for: {props.saleItem.barter.capitalize()}</p>
+            <p>Description: {props.saleItem.description}</p>
             <p>Email user for barter: {props.saleItem.userEmail}</p>
         </React.Fragment>
     )

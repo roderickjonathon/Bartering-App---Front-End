@@ -10,7 +10,8 @@ const SaleItemForm = (props) => {
             "location": event.target.location.value,
             "barter": event.target.barter.value,
             "img": event.target.img.value,
-            "userEmail": props.user
+            "userEmail": props.user,
+            "description": event.target.description.value
         };
         props.handleSaleItemPost(saleItem);
 
@@ -20,11 +21,12 @@ const SaleItemForm = (props) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Item Name" name="itemName"/>
-                <input type="text" placeholder="Location" name="location"/>
-                <input type="text" placeholder="What would you like to barter for?" name="barter"/>
+                <input required type="text" placeholder="Item Name" name="itemName"/>
+                <input required type="text" placeholder="Location" name="location"/>
+                <input required type="text" placeholder="A Short Description" name="description"/>
+                <input required type="text" placeholder="What would you like to barter for?" name="barter"/>
                 Select image to upload:
-                <input type="file" onChange={props.fileSelectedHandler} value={props.selectedFile} name="img"/>
+                <input required type="file" onChange={props.fileSelectedHandler} value={props.selectedFile} name="img"/>
                 <button type="submit">Submit</button>
             </form>
 
