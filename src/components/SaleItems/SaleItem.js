@@ -13,6 +13,7 @@ const SaleItem = (props) => {
     const url = "/saleitems/" + props.saleItem.id;
 
 
+
     String.prototype.capitalize = function() {
         return this.charAt(0).toUpperCase() + this.slice(1);
     };
@@ -21,7 +22,9 @@ const SaleItem = (props) => {
         return str.replace("C:\\fakepath\\","")
     };
 
-    const picUrl = `/public/images/${newString(props.saleItem.img)}`;
+
+    // const picUrl = `/public/images/${newString(props.saleItem.img)}`;
+    const picUrl = `/barter_img/${newString(props.saleItem.img)}`;
 
 
 

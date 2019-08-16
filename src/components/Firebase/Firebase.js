@@ -1,5 +1,5 @@
 import app from 'firebase/app';
-// import firebase from 'firebase/app';
+
 import 'firebase/auth';
 import 'firebase/database';
 // import * as ROLES from '../../constants/roles';
@@ -9,10 +9,11 @@ const firebaseConfig = {
     authDomain: "glasgowbarter.firebaseapp.com",
     databaseURL: "https://glasgowbarter.firebaseio.com",
     projectId: "glasgowbarter",
-    storageBucket: "",
+    storageBucket: "gs://glasgowbarter.appspot.com/barter_img",
     messagingSenderId: "997563808186",
     appId: "1:997563808186:web:f266f0fccc2ee461"
 };
+
 
 
 //This is the authentication interface for the React components that will connect to the Firebase API.
@@ -23,7 +24,11 @@ class Firebase {
 
         this.auth = app.auth();
         this.db = app.database();
+        // this.storage = app.app.storage("gs://glasgowbarter.appspot.com/barter_img");
+        // this.storageRef = this.storage.ref();
     }
+
+
 
     //create user function - uses Firebase API to authenticate
     doCreateUserWithEmailAndPassword = (email, password) =>
@@ -46,6 +51,7 @@ class Firebase {
     //get current user
     getCurrentUser = () =>
         this.auth.getCurrentUser;
+
 
     onAuthUserListener = (next, fallback) =>
         this.auth.onAuthStateChanged(authUser => {
@@ -80,7 +86,11 @@ class Firebase {
     // the paths in the ref() method match the location where users will be stored in Firebase API which follows REST philosophy
     user = uid => this.db.ref(`users/${uid}`);
     users = () => this.db.ref('users');
+
+
+
 }
 
 
-export default Firebase;
+
+export default Firebase ;

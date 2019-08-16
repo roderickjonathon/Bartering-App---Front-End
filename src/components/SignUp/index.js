@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { withFirebase } from '../Firebase';
 // import { compose } from 'recompose';
+import firebase from 'firebase/app';
 
 
 import * as ROUTES from '../../constants/routes';
@@ -15,7 +16,7 @@ const SignUpPage = () => (
 );
 
 const INITIAL_STATE = {
-    username: '',
+    displayName: '',
     email: '',
     passwordOne: '',
     passwordTwo: '',
@@ -33,9 +34,9 @@ class SignUpFormBase extends Component {
 
     //submit function to send for authentication
     onSubmit = event => {
-        const { username, email, passwordOne, isAdmin} = this.state;
+        const { displayName, email, passwordOne, isAdmin} = this.state;
         const roles = {};
-        //checking for admin privalges
+        //checking for admin privilages
         if (isAdmin) {
         roles[ROLES.ADMIN] = ROLES.ADMIN;
         }
@@ -47,7 +48,7 @@ class SignUpFormBase extends Component {
                     return this.props.firebase
                         .user(authUser.user.uid)
                         .set({
-                            username,
+                            displayName,
                             email,
                             roles,
                         });
@@ -56,10 +57,15 @@ class SignUpFormBase extends Component {
                 this.setState({ ...INITIAL_STATE});
                 //user Router to redirect to homepage
                 this.props.history.push(ROUTES.HOME)
-            });
-            // .catch(error => {
-            //     this.setState({ error })
-            // });
+            })
+            .catch(error => {
+                this.setState({ error })
+            }).then(() => {
+                const user = firebase.auth().currentUser;
+                user.updateProfile({
+                    displayName: this.state.displayName
+                })
+        });
         event.preventDefault();
     };
     //function to set state with inputted values
@@ -73,7 +79,7 @@ class SignUpFormBase extends Component {
 
     render() {
         const {
-            username,
+            displayName,
             email,
             passwordOne,
             passwordTwo,
@@ -86,16 +92,16 @@ class SignUpFormBase extends Component {
             passwordOne !== passwordTwo ||
             passwordOne === '' ||
             email === '' ||
-            username === '';
+            displayName === '';
 
         return (
             <form onSubmit={this.onSubmit}>
                 <input
-                    name="username"
-                    value={username}
+                    name="displayName"
+                    value={displayName}
                     onChange={this.onChange}
                     type="text"
-                    placeholder="Full Name"
+                    placeholder="Username"
                 />
                 <input
                     name="email"
@@ -118,15 +124,15 @@ class SignUpFormBase extends Component {
                     type="password"
                     placeholder="Confirm Password"
                 />
-                <label>
-                    Admin:
-                </label>
-                    <input
-                        name="isAdmin"
-                        type="checkbox"
-                        checked={isAdmin}
-                        onChange={this.onChangeCheckbox}
-                    />
+                {/*<label>*/}
+                {/*    Admin:*/}
+                {/*</label>*/}
+                {/*    <input*/}
+                {/*        name="isAdmin"*/}
+                {/*        type="checkbox"*/}
+                {/*        checked={isAdmin}*/}
+                {/*        onChange={this.onChangeCheckbox}*/}
+                {/*    />*/}
 
 
                 <button disabled={isInvalid} type="submit">Sign Up</button>

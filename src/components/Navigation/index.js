@@ -46,11 +46,6 @@ const NavigationAuth = ({ authUser }) => (
             <Link to={ROUTES.NEWITEM}>Add New Item for Barter</Link>
         </li>
 
-        {/*{authUser.roles.includes(ROLES.ADMIN) && (*/}
-        {/*    <li>*/}
-        {/*        <Link to={ROUTES.ADMIN}>Admin</Link>*/}
-        {/*    </li>*/}
-        {/*)}*/}
         <li>
             <SignOutButton />
         </li>

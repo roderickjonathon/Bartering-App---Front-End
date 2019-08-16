@@ -6,27 +6,33 @@ import withAuthorization from "../components/Session/withAuthorization";
 import SaleItemFormContainer from "./SaleItemFormContainer.js";
 
 
+
 class MainContainer extends Component {
+
+
 
     constructor(props){
         super(props);
             this.state = {
                 user:"",
                 saleItems:[],
-                selectedFile: ""
+                selectedFile: "",
+                storage: null
             };
             this.findSaleItemById = this.findSaleItemById.bind(this);
         }
 
+
         componentDidMount() {
         const request = new Request();
+
 
             const promise2 = request.get('/saleItems');
 
             const promises = [promise2];
 
             Promise.all(promises).then(data => {
-                console.log(this.props.firebase.auth.currentUser.email);
+                ;
                 this.setState({
 
                     user: this.props.firebase.auth.currentUser.email,
@@ -55,11 +61,11 @@ class MainContainer extends Component {
                     <React.Fragment>
                         <Switch>
                             <Route exact path="/saleitems" render={ (props) => {
-                            return <SaleItemList saleItems={this.state.saleItems} user={this.state.user}/>
+                            return <SaleItemList imgRef={this.state.imgRef} saleItems={this.state.saleItems} user={this.state.user}/>
                             }}/>
 
                             <Route exact path="/new-item" render={ (props) => {
-                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
+                                return <SaleItemFormContainer imgRef={this.state.imgRef} saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
                             }}/>
                         </Switch>
                     </React.Fragment>
