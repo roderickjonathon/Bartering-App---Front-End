@@ -60,7 +60,8 @@ class SaleItemFormContainer extends Component {
             <input required type="text" placeholder="What would you like to barter for?" name="barter"/>
             Select image to upload:
             <input required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
-            <input type='button' onClick={this.fileUploadHandler} value="Upload pic"/>
+            <input required type='button' onClick={this.fileUploadHandler} value="Upload pic"/>
+
             <button type="submit">Submit</button>
     </form>
 
