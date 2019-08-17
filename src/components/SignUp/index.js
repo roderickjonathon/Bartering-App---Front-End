@@ -20,7 +20,7 @@ const INITIAL_STATE = {
     email: '',
     passwordOne: '',
     passwordTwo: '',
-    isAdmin: null,
+    // isAdmin: null,
     error: null,
 };
 
@@ -83,7 +83,7 @@ class SignUpFormBase extends Component {
             email,
             passwordOne,
             passwordTwo,
-            isAdmin,
+            // isAdmin,
             error,
         } = this.state;
 

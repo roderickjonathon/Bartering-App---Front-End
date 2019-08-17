@@ -4,7 +4,7 @@ import Request from '../helpers/request.js'
 import SaleItemList from '../components/SaleItems/SaleItemList';
 import withAuthorization from "../components/Session/withAuthorization";
 import SaleItemFormContainer from "./SaleItemFormContainer.js";
-
+import * as firebase from "firebase/";
 
 
 class MainContainer extends Component {
@@ -26,7 +26,6 @@ class MainContainer extends Component {
         componentDidMount() {
         const request = new Request();
 
-
             const promise2 = request.get('/saleItems');
 
             const promises = [promise2];
@@ -39,7 +38,7 @@ class MainContainer extends Component {
 
                     saleItems: data[0]._embedded.saleItems,
 
-                    selectedFile: ""
+                    selectedFile: null
                 });
 
             })
@@ -65,7 +64,7 @@ class MainContainer extends Component {
                             }}/>
 
                             <Route exact path="/new-item" render={ (props) => {
-                                return <SaleItemFormContainer imgRef={this.state.imgRef} saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
+                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
                             }}/>
                         </Switch>
                     </React.Fragment>

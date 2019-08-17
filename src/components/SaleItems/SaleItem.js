@@ -23,8 +23,8 @@ const SaleItem = (props) => {
     };
 
 
-    // const picUrl = `/public/images/${newString(props.saleItem.img)}`;
-    const picUrl = `/barter_img/${newString(props.saleItem.img)}`;
+    const picUrl = `/public/images/${newString(props.saleItem.img)}`;
+    // const picUrl = `/barter_img/${newString(props.saleItem.img)}`;
 
 
 

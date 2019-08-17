@@ -9,7 +9,7 @@ const firebaseConfig = {
     authDomain: "glasgowbarter.firebaseapp.com",
     databaseURL: "https://glasgowbarter.firebaseio.com",
     projectId: "glasgowbarter",
-    storageBucket: "gs://glasgowbarter.appspot.com/barter_img",
+    storageBucket: "gs://glasgowbarter.appspot.com/",
     messagingSenderId: "997563808186",
     appId: "1:997563808186:web:f266f0fccc2ee461"
 };
