@@ -4,7 +4,7 @@ import Request from '../helpers/request.js'
 import SaleItemList from '../components/SaleItems/SaleItemList';
 import withAuthorization from "../components/Session/withAuthorization";
 import SaleItemFormContainer from "./SaleItemFormContainer.js";
-import * as firebase from "firebase/";
+// import * as firebase from "firebase/";
 
 
 class MainContainer extends Component {

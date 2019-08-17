@@ -3,10 +3,6 @@ import React from 'react';
 
 const SaleItemForm = (props) => {
 
-
-
-
-
     return (
         <div>
             <form onSubmit={props.handleSubmit}>

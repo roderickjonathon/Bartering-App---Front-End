@@ -21,7 +21,6 @@ class SaleItemFormContainer extends Component {
          const storageRef = storage.ref("images");
          const imagesRef = storageRef.child(this.state.selectedFile.name);
          imagesRef.put(this.state.selectedFile)
-
     };
 
 
@@ -31,7 +30,6 @@ class SaleItemFormContainer extends Component {
         request.post('/saleItems', saleItem).then(() => {
             window.location = '/saleItems'
         });
-        // this.fileUploadHandler()
     };
 
     fileSelectedHandler = event => {
@@ -68,7 +66,6 @@ class SaleItemFormContainer extends Component {
 
     </div>
 
-        {/*<SaleItemForm user={this.props.user}  handleSaleItemPost={this.handleSaleItemPost} fileSelectedHandler={this.fileSelectedHandler} handleSubmit={this.handleSubmit}/>*/}
     }
 }
 
