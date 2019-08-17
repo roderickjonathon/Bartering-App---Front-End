@@ -29,6 +29,7 @@ class SaleItemImage extends Component {
         }
 
         componentDidMount () {
+
         let currentComponent = this;
             const picName = `${this.newString(this.props.saleItem.img).toString()}`;
             const storage = firebase.storage();
@@ -46,7 +47,7 @@ class SaleItemImage extends Component {
         {
             return (
                 <div>
-                    <img id="image" className="component" src={this.state.imgUrl} alt="pic_image"/>
+                    <img id="image" className="component" src={this.state.imgUrl} alt="pic_image" width={200} height={200}/>
                 </div>
             )
         }
