@@ -19,19 +19,19 @@ class MainContainer extends Component {
                 selectedFile: "",
                 storage: null
             };
-            this.findSaleItemById = this.findSaleItemById.bind(this);
+            this.findSaleItemByName = this.findSaleItemByName.bind(this);
         }
 
 
         componentDidMount() {
         const request = new Request();
 
-            const promise2 = request.get('/saleItems');
+            const promise = request.get('/saleItems');
 
-            const promises = [promise2];
+            const promises = [promise];
 
             Promise.all(promises).then(data => {
-                ;
+
                 this.setState({
 
                     user: this.props.firebase.auth.currentUser.email,
@@ -44,9 +44,9 @@ class MainContainer extends Component {
             })
         }
 
-        findSaleItemById(id){
+        findSaleItemByName(itemName){
         const saleItem = this.state.saleItems.find((saleItem) => {
-            return saleItem.id === parseInt(id)
+            return saleItem.itemName === itemName
         });
             return saleItem;
         }
