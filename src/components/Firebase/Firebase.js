@@ -50,7 +50,7 @@ class Firebase {
 
     //get current user
     getCurrentUser = () =>
-        this.auth.getCurrentUser;
+        this.auth.getCurrentUser();
 
 
     onAuthUserListener = (next, fallback) =>

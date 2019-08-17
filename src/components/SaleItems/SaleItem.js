@@ -15,6 +15,7 @@ const SaleItem = (props) => {
 
 
 
+
     // eslint-disable-next-line
     String.prototype.capitalize = function() {
         return this.charAt(0).toUpperCase() + this.slice(1);
@@ -27,8 +28,8 @@ const SaleItem = (props) => {
             <p>Looking for: {props.saleItem.barter.capitalize()}</p>
             <p>Description: {props.saleItem.description}</p>
             <p>Email user for barter: {props.saleItem.userEmail}</p>
-            <a href={props.saleItem.userEmail}>Email User</a>
-
+            <a href={"mailto:" + props.saleItem.userEmail}>Contact {}</a>
+            { console.log(props.firebase) }
 
         </React.Fragment>
     )

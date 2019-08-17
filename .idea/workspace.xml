@@ -4,11 +4,13 @@
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.rules" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.rules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatApp/ChatApp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatApp/ChatApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Message/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Message/Message.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,7 @@
       <workItem from="1565566426199" duration="33381000" />
       <workItem from="1565884426023" duration="1514000" />
       <workItem from="1565889941320" duration="8084000" />
-      <workItem from="1565905563431" duration="40561000" />
+      <workItem from="1565905563431" duration="43040000" />
     </task>
     <servers />
   </component>

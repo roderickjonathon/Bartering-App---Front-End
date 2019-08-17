@@ -42,7 +42,7 @@ class SignUpFormBase extends Component {
         }
 
         this.props.firebase
-            .doCreateUserWithEmailAndPassword(email, passwordOne)
+            .doCreateUserWithEmailAndPassword(email, displayName, passwordOne)
             .then(authUser => {
                     //  if  doCreate function is successful, creates a user in the database
                     return this.props.firebase
@@ -83,7 +83,6 @@ class SignUpFormBase extends Component {
             email,
             passwordOne,
             passwordTwo,
-            // isAdmin,
             error,
         } = this.state;
 

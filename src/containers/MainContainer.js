@@ -4,7 +4,6 @@ import Request from '../helpers/request.js'
 import SaleItemList from '../components/SaleItems/SaleItemList';
 import withAuthorization from "../components/Session/withAuthorization";
 import SaleItemFormContainer from "./SaleItemFormContainer.js";
-// import * as firebase from "firebase/";
 
 
 class MainContainer extends Component {
@@ -34,7 +33,7 @@ class MainContainer extends Component {
 
                 this.setState({
 
-                    user: this.props.firebase.auth.currentUser.email,
+                    user: this.props.firebase.auth.currentUser,
 
                     saleItems: data[0]._embedded.saleItems,
 
