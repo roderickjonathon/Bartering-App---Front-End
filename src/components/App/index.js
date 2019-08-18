@@ -15,18 +15,13 @@ import * as ROUTES from '../../constants/routes';
 import  { withAuthentication } from '../Session';
 // import ChatApp from "../ChatApp/ChatApp";
 
+import styles from './App.css';
 
 const App = () => (
     <Router>
-        <div>
+        <div className={styles.app}>
             <Navigation />
-
-
             <hr />
-
-            <div>
-            </div>
-
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
             <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
             <Route path={ROUTES.SIGN_IN} component={SignInPage} />

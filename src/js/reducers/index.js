@@ -7,7 +7,7 @@ const initialState = {
 // second arg is an action, this action is a signal that is sent to the store to change the state
 function rootReducer(state = initialState, action) {
     return state;
-};
+}
 export default rootReducer;
 
 

@@ -29,7 +29,6 @@ const SaleItem = (props) => {
             <p>Description: {props.saleItem.description}</p>
             <p>Email user for barter: {props.saleItem.userEmail}</p>
             <a href={"mailto:" + props.saleItem.userEmail}>Contact {}</a>
-            { console.log(props.firebase) }
 
         </React.Fragment>
     )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import firebase from "firebase";
+import firebase from "firebase/app";
 
 
 class SaleItemImage extends Component {
@@ -15,19 +15,11 @@ class SaleItemImage extends Component {
         this.componentDidMount = this.componentDidMount.bind(this)
     }
 
-
-    // // eslint-disable-next-line
-    capitalize() {
-        String.prototype.capitalize = function () {
-            return this.charAt(0).toUpperCase() + this.slice(1);
-        };
-    }
-
-        //Function to bring back filename from my database
         newString(str) {
             return str.replace("C:\\fakepath\\", "")
         }
 
+    //Function to bring back filename from my database
         componentDidMount () {
 
         let currentComponent = this;
