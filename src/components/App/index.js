@@ -15,7 +15,7 @@ import * as ROUTES from '../../constants/routes';
 import  { withAuthentication } from '../Session';
 // import ChatApp from "../ChatApp/ChatApp";
 
-import styles from './App.css';
+import styles from './.App.css';
 
 const App = () => (
     <Router>

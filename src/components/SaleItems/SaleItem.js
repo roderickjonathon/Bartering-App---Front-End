@@ -23,13 +23,14 @@ const SaleItem = (props) => {
 
     return (
         <React.Fragment>
+            <div className="item">
             <Link to={url} className='component'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
             <SaleItemImage saleItem={props.saleItem}/>
             <p>Looking for: {props.saleItem.barter.capitalize()}</p>
             <p>Description: {props.saleItem.description}</p>
             <p>Email user for barter: {props.saleItem.userEmail}</p>
             <a href={"mailto:" + props.saleItem.userEmail}>Contact {}</a>
-
+            </div>
         </React.Fragment>
     )
 };

@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    display: flex;
+}
+
+#component-item li {
+    background-color: orange;
+    border: 3px solid crimson;
+    color: white;
+}
+
+
+#nav ul {
+    background-color: white;
+}
+
+p {
+
+    color: white;
+}
+
+#item {
+    color: white;
+    border: green solid 2px;
+}
+
+
+

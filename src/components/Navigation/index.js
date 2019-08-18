@@ -7,6 +7,7 @@ import SignOutButton from "../SignOut";
 
 // this import will allow the component to use React's context to consume the authenticated user
 import { AuthUserContext } from '../Session';
+import styles from './.Navigation.css'
 
 
 //this function will decide on what navbar to show the user, depending on the level of authentication
@@ -26,6 +27,8 @@ const Navigation = () => (
 
 // routes to show if user is logged in
 const NavigationAuth = ({ authUser }) => (
+    <div className="nav" >
+    <div style={styles.Navigation}>
     <ul>
         <li>
             <Link to={ROUTES.LANDING}>Landing</Link>
@@ -49,11 +52,14 @@ const NavigationAuth = ({ authUser }) => (
         <li>
             <SignOutButton />
         </li>
-    </ul>
+    </ul></div>
+    </div>
 
 );
 // routes to show if no login
 const NavigationNonAuth = () => (
+    <div className="nav">
+    <div style={styles.Navigation}>
     <ul>
         <li>
             <Link to={ROUTES.SIGN_IN}>Sign In</Link>
@@ -62,6 +68,8 @@ const NavigationNonAuth = () => (
             <Link to={ROUTES.LANDING}>Landing</Link>
         </li>
     </ul>
+    </div>
+    </div>
 );
 
 export default Navigation;
