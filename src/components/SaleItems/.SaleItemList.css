@@ -3,25 +3,28 @@ body {
     display: flex;
 }
 
-#component-item li {
+ .nav {
     background-color: orange;
+    color: white;
+}
+
+p {
     border: 3px solid crimson;
     color: white;
 }
 
-
-#nav ul {
-    background-color: white;
-}
-
-p {
-
+a {
+    border: 3px solid blue;
     color: white;
 }
 
-#item {
+.item {
     color: white;
     border: green solid 2px;
+}
+
+.component {
+    border: rebeccapurple solid 3px;
 }
 
 
