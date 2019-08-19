@@ -1,9 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import withAuthorization from "../Session/withAuthorization";
 import SaleItemImage from './SaleItemImage';
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -13,8 +11,6 @@ const SaleItem = (props) => {
     if (!props.saleItem) {
         return "Loading..."
     }
-
-    const url = "/saleitems/" + props.saleItem.id;
 
     // eslint-disable-next-line
     String.prototype.capitalize = function () {
@@ -28,8 +24,8 @@ const SaleItem = (props) => {
 
                     <Row className="justify-content-md-center">
                         <Col>
-                <Link to={url}
-                      className='component'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
+                <h2>
+                    {props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </h2>
                         </Col>
                 </Row>
 
@@ -39,21 +35,21 @@ const SaleItem = (props) => {
                         </Col>
                     </Row>
 
-                    <Row className="justify-content-md-center">
-                        <Col className="justify-content-md-center">
-                <p>{props.saleItem.barter.capitalize()}</p>
-                        </Col>
-                    </Row>
-
                     <Row>
                         <Col className="justify-content-md-center">
                 <p>{props.saleItem.description}</p>
                         </Col>
                     </Row>
 
+                <Row className="justify-content-md-center">
+                    <Col className="justify-content-md-center">
+                        <p>{props.saleItem.barter.capitalize()}</p>
+                    </Col>
+                </Row>
+
                     <Row>
                         <Col className="justify-content-md-center">
-                <a href={"mailto:" + props.saleItem.userEmail}>Contact {}</a>
+                <a href={"mailto:" + props.saleItem.userEmail}>Click here to contact for more info!</a>
                         </Col>
                     </Row>
                 {/*</Form>*/}

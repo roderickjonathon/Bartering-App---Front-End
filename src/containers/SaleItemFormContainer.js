@@ -62,7 +62,7 @@ class SaleItemFormContainer extends Component {
                 </Form.Group>
 
                 <Form.Group>
-                <Form.Control required type="text" placeholder="A Short Description" name="description"/>
+                <Form.Control required as="textarea" rows="2" type="text" placeholder="A Short Description, condition of item etc.." name="description"/>
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -74,7 +74,7 @@ class SaleItemFormContainer extends Component {
                 <input  required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
 
                 </Form.Group>
-                <Button  type="submit">Submit</Button>
+                <Button disabled={this.state == null}  type="submit">Submit</Button>
             </Form>
 
         </div>
