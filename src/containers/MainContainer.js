@@ -14,7 +14,6 @@ class MainContainer extends Component {
         this.state = {
             user: "",
             saleItems: [],
-            selectedFile: "",
             storage: null
         };
         this.findSaleItemByName = this.findSaleItemByName.bind(this);
@@ -64,7 +63,7 @@ class MainContainer extends Component {
 
                             <Route exact path="/new-item" render={(props) => {
                                 return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user}
-                                                              selectedFile={this.state.selectedFile}/>
+                                                              />
                             }}/>
                         </Switch>
                     </React.Fragment>

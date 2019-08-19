@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import * as ROUTES from '../../constants/routes';
 import SignOutButton from "../SignOut";
@@ -7,7 +6,6 @@ import SignOutButton from "../SignOut";
 
 // this import will allow the component to use React's context to consume the authenticated user
 import {AuthUserContext} from '../Session';
-import styles from './.Navigation.css'
 import Dropdown from "react-bootstrap/Dropdown";
 
 
@@ -34,21 +32,21 @@ const NavigationAuth = ({authUser}) => (
             Menu
             </Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Dropdown.Item to={ROUTES.LANDING}>Landing</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.LANDING}>Landing</Dropdown.Item>
 
-                    <Dropdown.Item to={ROUTES.HOME}>Home</Dropdown.Item>
-
-
-                    <Dropdown.Item to={ROUTES.ACCOUNT}>Account</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.HOME}>Home</Dropdown.Item>
 
 
-                    <Dropdown.Item to={ROUTES.SALEITEMS}>List of Local Barters</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.ACCOUNT}>Account</Dropdown.Item>
 
 
-                    <Dropdown.Item to={ROUTES.CHAT}>Chat</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.SALEITEMS}>List of Local Barters</Dropdown.Item>
 
 
-                    <Dropdown.Item to={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.CHAT}>Chat</Dropdown.Item>
+
+
+                    <Dropdown.Item href={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
 
 
                     <Dropdown.Item> <SignOutButton/> </Dropdown.Item>
@@ -68,9 +66,9 @@ const NavigationNonAuth = () => (
         </Dropdown.Toggle>
             <Dropdown.Menu>
 
-                    <Dropdown.Item to={ROUTES.SIGN_IN}>Sign In</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.SIGN_IN}>Sign In</Dropdown.Item>
 
-                    <Dropdown.Item to={ROUTES.LANDING}>Landing</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.LANDING}>Landing</Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
     </div>

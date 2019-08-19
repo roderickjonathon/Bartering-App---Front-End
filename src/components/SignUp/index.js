@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {Link, withRouter} from 'react-router-dom';
+import { withRouter} from 'react-router-dom';
 import {withFirebase} from '../Firebase';
-// import { compose } from 'recompose';
 import firebase from 'firebase/app';
 
 
 import * as ROUTES from '../../constants/routes';
 import * as ROLES from '../../constants/roles';
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const SignUpPage = () => (
     <div>
@@ -94,35 +95,47 @@ class SignUpFormBase extends Component {
             displayName === '';
 
         return (
-            <form onSubmit={this.onSubmit}>
-                <input
+            <Form onSubmit={this.onSubmit}>
+                <Form.Group>
+                <Form.Control
                     name="displayName"
                     value={displayName}
                     onChange={this.onChange}
                     type="text"
                     placeholder="Username"
                 />
-                <input
+                </Form.Group>
+
+                <Form.Group>
+                <Form.Control
                     name="email"
                     value={email}
                     onChange={this.onChange}
                     type="text"
                     placeholder="Email Address"
                 />
-                <input
+                </Form.Group>
+
+                <Form.Group>
+                <Form.Control
                     name="passwordOne"
                     value={passwordOne}
                     onChange={this.onChange}
                     type="password"
                     placeholder="Password"
                 />
-                <input
+                </Form.Group>
+
+                <Form.Group>
+                <Form.Control
                     name="passwordTwo"
                     value={passwordTwo}
                     onChange={this.onChange}
                     type="password"
                     placeholder="Confirm Password"
                 />
+                </Form.Group>
+
                 {/*<label>*/}
                 {/*    Admin:*/}
                 {/*</label>*/}
@@ -134,11 +147,11 @@ class SignUpFormBase extends Component {
                 {/*    />*/}
 
 
-                <button disabled={isInvalid} type="submit">Sign Up</button>
+                <Button disabled={isInvalid} type="submit">Sign Up</Button>
 
                 {error && <p>{error.message}</p>}
 
-            </form>
+            </Form>
         );
     }
 }
@@ -160,9 +173,9 @@ class SignUpFormBase extends Component {
 // // export { SignUpForm, SignUpLink };
 
 const SignUpLink = () => (
-    <p>
-        Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
-    </p>
+    <Form>
+        Don't have an account? <Button href={ROUTES.SIGN_UP}>Sign Up</Button>
+    </Form>
 );
 const SignUpForm = withRouter(withFirebase(SignUpFormBase));
 export default SignUpPage;

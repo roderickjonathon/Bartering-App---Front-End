@@ -3,7 +3,6 @@ import Request from "../helpers/request";
 import firebase from "firebase";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 
 class SaleItemFormContainer extends Component {
 
@@ -44,10 +43,11 @@ class SaleItemFormContainer extends Component {
             "location": event.target.location.value,
             "barter": event.target.barter.value,
             "img": event.target.img.value,
-            "userEmail": this.props.user,
+            "userEmail": this.props.user.email,
             "description": event.target.description.value
         };
         this.handleSaleItemPost(saleItem);
+        this.fileUploadHandler()
     };
 
     render() {
@@ -74,7 +74,7 @@ class SaleItemFormContainer extends Component {
                 <input  required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
 
                 </Form.Group>
-                <Button type="submit">Submit</Button>
+                <Button  type="submit">Submit</Button>
             </Form>
 
         </div>

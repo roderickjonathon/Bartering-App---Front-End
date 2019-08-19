@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {withFirebase} from "../Firebase";
-import {Link} from "react-router-dom";
 import * as ROUTES from '../../constants/routes';
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const PasswordForgetPage = () => (
     <div>
@@ -49,29 +50,32 @@ class PasswordForgetFormBase extends Component {
 
         return (
             //form to submit info needed by firebase authentication API.
-            <form onSubmit={this.onSubmit}>
-                <input
+            <Form onSubmit={this.onSubmit}>
+                <Form.Group>
+                <Form.Control
                     name="email"
                     value={this.state.email}
                     onChange={this.onChange}
                     type="text"
                     placeholder="Email Address"
                 />
-                <button disabled={isInvalid} type="submit">
+                </Form.Group>
+
+                <Button disabled={isInvalid} type="submit">
                     Reset My Password
-                </button>
+                </Button>
 
                 {error && <p>{error.message}</p>}
-            </form>
+            </Form>
         );
     }
 
 }
 
 const PasswordForgetLink = () => (
-    <p>
-        <Link to={ROUTES.PASSWORD_FORGET}> Forgot Password?</Link>
-    </p>
+        <Form>
+        <Button href={ROUTES.PASSWORD_FORGET}> Forgot Password?</Button>
+        </Form>
 );
 
 export default PasswordForgetPage;

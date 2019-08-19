@@ -5,6 +5,8 @@ import {SignUpLink} from "../SignUp";
 import {withFirebase} from "../Firebase";
 import * as ROUTES from '../../constants/routes';
 import {PasswordForgetLink} from "../PasswordForget";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const SignInPage = () => (
     <div>
@@ -53,27 +55,37 @@ class SignInFormBase extends Component {
         const isInvalid = password === '' || email === '';
 
         return (
-            <form onSubmit={this.onSubmit}>
-                <input
+            <Form onSubmit={this.onSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                <Form.Control
+                    required
                     name="email"
                     value={email}
                     onChange={this.onChange}
                     type="text"
                     placeholder="Email Address"
                 />
-                <input
+                </Form.Group>
+
+                <Form.Group>
+                <Form.Control
+                    required
                     name="password"
                     value={password}
                     onChange={this.onChange}
                     type="password"
                     placeholder="Password"
                 />
-                <button disabled={isInvalid} type="submit">
+                </Form.Group>
+
+                <Form.Group>
+                <Button disabled={isInvalid} type="submit">
                     Sign In
-                </button>
+                </Button>
+                </Form.Group>
 
                 {error && <p>{error.message}</p>}
-            </form>
+            </Form>
         );
     }
 }

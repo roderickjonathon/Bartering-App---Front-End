@@ -17,7 +17,7 @@ const SaleItemForm = (props) => {
                 <input required type="text" placeholder="What would you like to barter for?" name="barter"/>
                 Select image to upload:
                 <input  required type="file" onChange={props.fileSelectedHandler} value={props.selectedFile} name="img"/>
-                    <Button type="submit">Submit</Button>
+                    <Button disabled type="submit">Submit</Button>
             </Form>
 
         </div>
