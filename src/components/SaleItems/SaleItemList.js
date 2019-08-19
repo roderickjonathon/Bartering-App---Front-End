@@ -3,7 +3,6 @@ import SaleItem from './SaleItem.js';
 import styles from './.SaleItemList.css'
 
 
-
 const SaleItemList = (props) => {
 
         if (props.saleItems) {

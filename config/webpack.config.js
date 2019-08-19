@@ -360,6 +360,10 @@ module.exports = function(webpackEnv) {
                 customize: require.resolve(
                   'babel-preset-react-app/webpack-overrides'
                 ),
+                presets: [
+                  "@babel/preset-env",
+                  "@babel/preset-react"
+                ],
                 
                 plugins: [
                   [
@@ -373,6 +377,9 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                    [
+                        "@babel/plugin-proposal-class-properties"
+                    ],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
