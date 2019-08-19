@@ -1,6 +1,14 @@
 
 body {
-    background-color: lightblue;
+    background-color: #50C9CE;
     display: flex;
 }
 
+
+#dropdown-basic {
+    color: white;
+    width: 50vw;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #72A1E5;
+}

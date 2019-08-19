@@ -3,41 +3,70 @@ body {
     display: flex;
 }
 
+
+
 .nav {
-    background-color: orange;
+    background-color: #9883E5;
     color: white;
 }
 
 p {
-    border: 3px solid crimson;
-    color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 130%
+
+}
+
+a {
+    color: white;
+}
+
+image {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
 }
 
 
 
 .item {
     color: white;
-    border: green solid 2px;
+    border: white solid 5px;
+    border-radius: 50px;
     padding: 3vh;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
     width: 100vw;
     height: 50vh;
-    background-color: #039be5;
+    background-color: rgba(46, 56, 46, 1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+    border-radius: 105px;
 }
 
 .component {
-    border: rebeccapurple solid 3px;
+    /*border: rebeccapurple solid 3px;*/
+    display: flex;
+    justify-content: center;
 }
 
 ul {
 }
 
-form {
-    justify-content: center;
-    border: solid green 3px;
-    margin: 5vw;
-    padding: 2vw;
-    background-color: #ECEFF1;
-}
 
+/*$color1: rgba(46, 56, 46, 1);*/
+/*$color2: rgba(80, 201, 206, 1);*/
+/*$color3: rgba(114, 161, 229, 1);*/
+/*$color4: rgba(152, 131, 229, 1);*/
+/*$color5: rgba(252, 211, 222, 1);*/
 
 

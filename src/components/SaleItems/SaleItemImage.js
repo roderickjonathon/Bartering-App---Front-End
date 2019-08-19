@@ -38,9 +38,7 @@ class SaleItemImage extends Component {
 
     render() {
         return (
-            <div>
-                <Image id="image" className="component" src={this.state.imgUrl} alt="pic_image" width={200} height={200} thumbnail fluid />
-            </div>
+                <Image id="image" className="component" src={this.state.imgUrl} alt="pic_image" width={200} height={200} roundedCircle />
         )
     }
 }
