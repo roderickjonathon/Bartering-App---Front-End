@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 
 const SignUpPage = () => (
     <div>
-        <h1>SignUp</h1>
+        <h2>Welcome to Glasgow Barter! Please sign Up to use our App.</h2>
         <SignUpForm/>
     </div>
 );
@@ -173,9 +173,11 @@ class SignUpFormBase extends Component {
 // // export { SignUpForm, SignUpLink };
 
 const SignUpLink = () => (
-    <Form>
-        Don't have an account? <Button href={ROUTES.SIGN_UP}>Sign Up</Button>
-    </Form>
+    <div id="sign-up-btn">
+        <p> Don't have an account? </p>
+        <div> </div>
+        <Button href={ROUTES.SIGN_UP}>Sign Up</Button>
+    </div>
 );
 const SignUpForm = withRouter(withFirebase(SignUpFormBase));
 export default SignUpPage;

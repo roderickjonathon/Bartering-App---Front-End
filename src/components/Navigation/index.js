@@ -7,6 +7,7 @@ import SignOutButton from "../SignOut";
 // this import will allow the component to use React's context to consume the authenticated user
 import {AuthUserContext} from '../Session';
 import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
 
 
 //this function will decide on what navbar to show the user, depending on the level of authentication
@@ -52,6 +53,7 @@ const NavigationAuth = ({authUser}) => (
 
         </Dropdown.Menu>
         </Dropdown>
+        <Button id="dropdown-basic" href={ROUTES.NEWITEM}> Barter your own stuff </Button>
     </div>
 );
 

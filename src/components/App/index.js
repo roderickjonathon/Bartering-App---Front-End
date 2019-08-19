@@ -12,9 +12,9 @@ import MainContainer from '../../containers/MainContainer';
 
 import * as ROUTES from '../../constants/routes';
 import {withAuthentication} from '../Session';
-// import ChatApp from "../ChatApp/ChatApp";
 
 import styles from './.App.css';
+import Button from "react-bootstrap/Button";
 
 const App = () => (
     <Router>

@@ -11,4 +11,29 @@ body {
     font-size: larger;
     font-weight: bolder;
     background-color: #72A1E5;
+    height: 8vh;
+}
+
+#root {
+    width: 100vw;
+}
+
+#formBasicEmail {
+    width: 50vw;
+}
+
+h2 {
+    color: white;
+}
+
+#sign-in {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#sign-up-btn {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }

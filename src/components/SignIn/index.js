@@ -9,10 +9,11 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const SignInPage = () => (
-    <div>
-        <h1>Sign In</h1>
+    <div id="sign-in">
+        <h2>Please sign in to continue.</h2>
         <SignInForm/>
         <PasswordForgetLink/>
+    <hr/>
         <SignUpLink/>
     </div>
 );
@@ -67,7 +68,7 @@ class SignInFormBase extends Component {
                 />
                 </Form.Group>
 
-                <Form.Group>
+                <Form.Group controlId="formBasicEmail">
                 <Form.Control
                     required
                     name="password"
