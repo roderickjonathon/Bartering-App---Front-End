@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import firebase from "firebase/app";
+import Image from "react-bootstrap/Image";
 
 
 class SaleItemImage extends Component {
@@ -38,7 +39,7 @@ class SaleItemImage extends Component {
     render() {
         return (
             <div>
-                <img id="image" className="component" src={this.state.imgUrl} alt="pic_image" width={200} height={200}/>
+                <Image id="image" className="component" src={this.state.imgUrl} alt="pic_image" width={200} height={200} thumbnail fluid />
             </div>
         )
     }

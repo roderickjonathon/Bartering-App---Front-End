@@ -1,9 +1,6 @@
 
 body {
-    background-color: lightpink;
+    background-color: lightblue;
+    display: flex;
 }
 
-#nav {
-    display: block;
-    color: rebeccapurple;
-}

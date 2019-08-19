@@ -10,17 +10,18 @@ body {
 
 p {
     border: 3px solid crimson;
-    color: white;
+    color: blue;
 }
 
-a {
-    border: 3px solid blue;
-    color: white;
-}
+
 
 .item {
     color: white;
     border: green solid 2px;
+    padding: 3vh;
+    width: 100vw;
+    height: 50vh;
+    background-color: #039be5;
 }
 
 .component {
@@ -31,10 +32,11 @@ ul {
 }
 
 form {
-
+    justify-content: center;
     border: solid green 3px;
     margin: 5vw;
     padding: 2vw;
+    background-color: #ECEFF1;
 }
 
 

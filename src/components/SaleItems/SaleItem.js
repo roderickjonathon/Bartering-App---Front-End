@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import withAuthorization from "../Session/withAuthorization";
 import SaleItemImage from './SaleItemImage';
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Form from "react-bootstrap/Form";
 
 
 const SaleItem = (props) => {
@@ -18,16 +20,17 @@ const SaleItem = (props) => {
     };
 
     return (
-
         <React.Fragment>
-            <div className="item">
+            <Jumbotron className="item" fluid>
+                <Form>
                 <Link to={url}
                       className='component'>{props.saleItem.itemName.capitalize()} in {props.saleItem.location.capitalize()} </Link>
                 <SaleItemImage saleItem={props.saleItem}/>
-                <p>Looking for: {props.saleItem.barter.capitalize()}</p>
-                <p>Description: {props.saleItem.description}</p>
+                <p>{props.saleItem.barter.capitalize()}</p>
+                <p>{props.saleItem.description}</p>
                 <a href={"mailto:" + props.saleItem.userEmail}>Contact {}</a>
-            </div>
+                </Form>
+            </Jumbotron>
         </React.Fragment>
 
     )

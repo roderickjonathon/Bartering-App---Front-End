@@ -36,6 +36,7 @@ class PasswordForgetFormBase extends Component {
             });
 
         event.preventDefault();
+       window.location = "/signin"
     };
 
     onChange = event => {
