@@ -1,13 +1,22 @@
 import React from 'react';
 
 import {withAuthorization} from '../Session';
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 
 const HomePage = () => (
-    <div>
-        <h1>Home Page</h1>
-        <h1> Hi there </h1>
-    </div>
+    <Jumbotron>
+        <h1>Welcome to Glasgow Bartering!</h1>
+        <h3> Where would you like to go? </h3>
+        <Form.Group>
+        <Button variant="primary"> Check out local items for barter</Button>
+        </Form.Group>
+        <Form.Group>
+        <Button variant="primary"> Barter your own items</Button>
+        </Form.Group>
+    </Jumbotron>
 );
 
 //sets authorization permissions to be passed to withAuth...

@@ -32,7 +32,6 @@ const NavigationAuth = ({authUser}) => (
             Menu
             </Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Dropdown.Item href={ROUTES.LANDING}>Landing</Dropdown.Item>
 
                     <Dropdown.Item href={ROUTES.HOME}>Home</Dropdown.Item>
 
@@ -43,7 +42,7 @@ const NavigationAuth = ({authUser}) => (
                     <Dropdown.Item href={ROUTES.SALEITEMS}>List of Local Barters</Dropdown.Item>
 
 
-                    <Dropdown.Item href={ROUTES.CHAT}>Chat</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.CHAT}>Chat(Coming soon!)</Dropdown.Item>
 
 
                     <Dropdown.Item href={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
