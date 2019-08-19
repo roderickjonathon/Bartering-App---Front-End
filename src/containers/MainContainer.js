@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Request from '../helpers/request.js'
 import SaleItemList from '../components/SaleItems/SaleItemList';
@@ -9,61 +9,62 @@ import SaleItemFormContainer from "./SaleItemFormContainer.js";
 class MainContainer extends Component {
 
 
-
-    constructor(props){
+    constructor(props) {
         super(props);
-            this.state = {
-                user:"",
-                saleItems:[],
-                selectedFile: "",
-                storage: null
-            };
-            this.findSaleItemByName = this.findSaleItemByName.bind(this);
-        }
+        this.state = {
+            user: "",
+            saleItems: [],
+            selectedFile: "",
+            storage: null
+        };
+        this.findSaleItemByName = this.findSaleItemByName.bind(this);
+    }
 
 
-        componentDidMount() {
+    componentDidMount() {
         const request = new Request();
 
-            const promise = request.get('/saleItems');
+        const promise = request.get('/saleItems');
 
-            const promises = [promise];
+        const promises = [promise];
 
-            Promise.all(promises).then(data => {
+        Promise.all(promises).then(data => {
 
-                this.setState({
+            this.setState({
 
-                    user: this.props.firebase.auth.currentUser,
+                user: this.props.firebase.auth.currentUser,
 
-                    saleItems: data[0]._embedded.saleItems,
+                saleItems: data[0]._embedded.saleItems,
 
-                    selectedFile: null
-                });
+                selectedFile: null
+            });
 
-            })
-        }
+        })
+    }
 
-        findSaleItemByName(itemName){
+    findSaleItemByName(itemName) {
         const saleItem = this.state.saleItems.find((saleItem) => {
             return saleItem.itemName === itemName
         });
-            return saleItem;
-        }
+        return saleItem;
+    }
 
 
-        render(){
-        return(
+    render() {
+        return (
 
             <div>
                 <Router>
                     <React.Fragment>
                         <Switch>
-                            <Route exact path="/saleitems" render={ (props) => {
-                            return <SaleItemList imgRef={this.state.imgRef} saleItems={this.state.saleItems} user={this.state.user}/>
+                            <Route exact path="/saleitems" render={(props) => {
+                                return <SaleItemList imgRef={this.state.imgRef} saleItems={this.state.saleItems}
+                                                     user={this.state.user}/>
                             }}/>
 
-                            <Route exact path="/new-item" render={ (props) => {
-                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user} selectedFile={this.state.selectedFile}/>
+                            <Route exact path="/new-item" render={(props) => {
+                                return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user}
+                                                              selectedFile={this.state.selectedFile}/>
                             }}/>
                         </Switch>
                     </React.Fragment>
@@ -72,7 +73,7 @@ class MainContainer extends Component {
             </div>
 
         )
-        }
+    }
 
 
 }

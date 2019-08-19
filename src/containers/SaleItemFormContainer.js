@@ -1,13 +1,13 @@
-import React, { Component} from 'react';
+import React, {Component} from 'react';
 import Request from "../helpers/request";
 import firebase from "firebase";
-
-
-
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 
 class SaleItemFormContainer extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.handleSaleItemPost = this.handleSaleItemPost.bind(this);
         this.fileSelectedHandler = this.fileSelectedHandler.bind(this);
@@ -16,16 +16,15 @@ class SaleItemFormContainer extends Component {
     }
 
 
-     fileUploadHandler = () => {
-         const storage = firebase.storage();
-         const storageRef = storage.ref("images");
-         const imagesRef = storageRef.child(this.state.selectedFile.name);
-         imagesRef.put(this.state.selectedFile)
+    fileUploadHandler = () => {
+        const storage = firebase.storage();
+        const storageRef = storage.ref("images");
+        const imagesRef = storageRef.child(this.state.selectedFile.name);
+        imagesRef.put(this.state.selectedFile)
     };
 
 
-
-    handleSaleItemPost = (saleItem) =>{
+    handleSaleItemPost = (saleItem) => {
         const request = new Request();
         request.post('/saleItems', saleItem).then(() => {
             window.location = '/saleItems'
@@ -51,21 +50,34 @@ class SaleItemFormContainer extends Component {
         this.handleSaleItemPost(saleItem);
     };
 
-    render(){
+    render() {
         return <div>
-            <form onSubmit={this.handleSubmit}>
-            <input required type="text" placeholder="Item Name" name="itemName"/>
-            <input required type="text" placeholder="Location" name="location"/>
-            <input required type="text" placeholder="A Short Description" name="description"/>
-            <input required type="text" placeholder="What would you like to barter for?" name="barter"/>
-            Select image to upload:
-            <input required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
-            <input required type='button' onClick={this.fileUploadHandler} value="Upload pic"/>
+            <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Control required type="text" placeholder="Item Name" name="itemName"/>
+                </Form.Group>
 
-            <button type="submit">Submit</button>
-    </form>
+                <Form.Group>
+                <Form.Control required type="text" placeholder="Location" name="location"/>
+                </Form.Group>
 
-    </div>
+                <Form.Group>
+                <Form.Control required type="text" placeholder="A Short Description" name="description"/>
+                </Form.Group>
+
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Control required as="textarea" rows="3" type="text" placeholder="What would you like to barter for?" name="barter"/>
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label> Upload a picture      </Form.Label>
+                <input  required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
+
+                </Form.Group>
+                <Button type="submit">Submit</Button>
+            </Form>
+
+        </div>
 
     }
 }

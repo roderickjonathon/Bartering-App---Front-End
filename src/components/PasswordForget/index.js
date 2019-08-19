@@ -4,10 +4,10 @@ import {Link} from "react-router-dom";
 import * as ROUTES from '../../constants/routes';
 
 const PasswordForgetPage = () => (
-<div>
-    <h1>Password Forget</h1>
-    <PasswordForgetForm />
-</div>
+    <div>
+        <h1>Password Forget</h1>
+        <PasswordForgetForm/>
+    </div>
 );
 
 const INITIAL_STATE = {
@@ -28,7 +28,7 @@ class PasswordForgetFormBase extends Component {
         this.props.firebase
             .doPasswordReset(email)
             .then(() => {
-                this.setState({ ...INITIAL_STATE});
+                this.setState({...INITIAL_STATE});
             })
             .catch(error => {
                 this.setState({error});
@@ -38,15 +38,16 @@ class PasswordForgetFormBase extends Component {
     };
 
     onChange = event => {
-        this.setState({ [event.target.name]: event.target.value});
-};
+        this.setState({[event.target.name]: event.target.value});
+    };
+
     render() {
-        const { email, error} = this.state;
+        const {email, error} = this.state;
 
         const isInvalid = email === '';
 
 
-        return(
+        return (
             //form to submit info needed by firebase authentication API.
             <form onSubmit={this.onSubmit}>
                 <input
@@ -77,4 +78,4 @@ export default PasswordForgetPage;
 
 const PasswordForgetForm = withFirebase(PasswordForgetFormBase);
 
-export { PasswordForgetForm, PasswordForgetLink};
+export {PasswordForgetForm, PasswordForgetLink};

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AuthUserContext from "./context";
-import { withFirebase } from "../Firebase";
+import {withFirebase} from "../Firebase";
 
 const withAuthentication = Component => {
     class WithAuthentication extends React.Component {
@@ -17,6 +17,7 @@ const withAuthentication = Component => {
                 authUser: null,
             };
         }
+
         //use firebase's listener function to get authenticated user from firebase
         // helper function onAuthStateChanged() takes in a function that has access to the auth user.
         // this function is called everytime something changes for the authenticated user(sign in, sign out etc)
@@ -25,10 +26,10 @@ const withAuthentication = Component => {
         componentDidMount() {
             this.listener = this.props.firebase.onAuthUserListener(
                 authUser => {
-                    this.setState({ authUser });
+                    this.setState({authUser});
                 },
                 () => {
-                    this.setState({ authUser: null });
+                    this.setState({authUser: null});
                 },
             );
         }

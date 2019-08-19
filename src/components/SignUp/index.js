@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import { withFirebase } from '../Firebase';
+import React, {Component} from 'react';
+import {Link, withRouter} from 'react-router-dom';
+import {withFirebase} from '../Firebase';
 // import { compose } from 'recompose';
 import firebase from 'firebase/app';
 
@@ -11,7 +11,7 @@ import * as ROLES from '../../constants/roles';
 const SignUpPage = () => (
     <div>
         <h1>SignUp</h1>
-        <SignUpForm />
+        <SignUpForm/>
     </div>
 );
 
@@ -29,52 +29,52 @@ class SignUpFormBase extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {...INITIAL_STATE };
+        this.state = {...INITIAL_STATE};
     }
 
     //submit function to send for authentication
     onSubmit = event => {
-        const { displayName, email, passwordOne, isAdmin} = this.state;
+        const {displayName, email, passwordOne, isAdmin} = this.state;
         const roles = {};
         //checking for admin privilages
         if (isAdmin) {
-        roles[ROLES.ADMIN] = ROLES.ADMIN;
+            roles[ROLES.ADMIN] = ROLES.ADMIN;
         }
 
         this.props.firebase
             .doCreateUserWithEmailAndPassword(email, displayName, passwordOne)
             .then(authUser => {
-                    //  if  doCreate function is successful, creates a user in the database
-                    return this.props.firebase
-                        .user(authUser.user.uid)
-                        .set({
-                            displayName,
-                            email,
-                            roles,
-                        });
-                })
+                //  if  doCreate function is successful, creates a user in the database
+                return this.props.firebase
+                    .user(authUser.user.uid)
+                    .set({
+                        displayName,
+                        email,
+                        roles,
+                    });
+            })
             .then(() => {
-                this.setState({ ...INITIAL_STATE});
+                this.setState({...INITIAL_STATE});
                 //user Router to redirect to homepage
                 this.props.history.push(ROUTES.HOME)
             })
             .catch(error => {
-                this.setState({ error })
+                this.setState({error})
             }).then(() => {
-                const user = firebase.auth().currentUser;
-                user.updateProfile({
-                    displayName: this.state.displayName
-                })
+            const user = firebase.auth().currentUser;
+            user.updateProfile({
+                displayName: this.state.displayName
+            })
         });
         event.preventDefault();
     };
     //function to set state with inputted values
     onChange = event => {
-        this.setState({ [event.target.name]: event.target.value })
+        this.setState({[event.target.name]: event.target.value})
     };
 
     onChangeCheckbox = event => {
-        this.setState({[event.target.name]: event.target.checked });
+        this.setState({[event.target.name]: event.target.checked});
     };
 
     render() {
@@ -166,4 +166,4 @@ const SignUpLink = () => (
 );
 const SignUpForm = withRouter(withFirebase(SignUpFormBase));
 export default SignUpPage;
-export { SignUpForm, SignUpLink };
+export {SignUpForm, SignUpLink};

@@ -3,7 +3,7 @@ body {
     display: flex;
 }
 
- .nav {
+.nav {
     background-color: orange;
     color: white;
 }
@@ -25,6 +25,16 @@ a {
 
 .component {
     border: rebeccapurple solid 3px;
+}
+
+ul {
+}
+
+form {
+
+    border: solid green 3px;
+    margin: 5vw;
+    padding: 2vw;
 }
 
 

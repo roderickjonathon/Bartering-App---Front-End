@@ -1,10 +1,9 @@
 
-
 body {
- background-color: lightpink;
+    background-color: lightpink;
 }
 
 #nav {
- display: block;
- color: rebeccapurple;
+    display: block;
+    color: rebeccapurple;
 }

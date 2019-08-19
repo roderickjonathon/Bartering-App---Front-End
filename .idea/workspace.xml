@@ -3,11 +3,57 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/cssTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/fileTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/pnpTs.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cors.json" beforeDir="false" afterPath="$PROJECT_DIR$/cors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/.App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/.App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Firebase/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Firebase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Message/Message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Message/Message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PasswordChange/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordChange/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PasswordForget/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordForget/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/.SaleItemList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/.SaleItemList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemImage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Session/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Session/withAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/withAuthentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Session/withAuthorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/withAuthorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignIn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignOut/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignOut/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SaleItemFormContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SaleItemFormContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +84,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -90,7 +137,7 @@
       <workItem from="1565566426199" duration="33381000" />
       <workItem from="1565884426023" duration="1514000" />
       <workItem from="1565889941320" duration="8084000" />
-      <workItem from="1565905563431" duration="51753000" />
+      <workItem from="1565905563431" duration="56623000" />
     </task>
     <servers />
   </component>

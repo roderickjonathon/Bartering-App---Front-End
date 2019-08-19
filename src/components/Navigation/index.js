@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import * as ROUTES from '../../constants/routes';
 import SignOutButton from "../SignOut";
 // import * as ROLES from "../../constants/roles";
 
 // this import will allow the component to use React's context to consume the authenticated user
-import { AuthUserContext } from '../Session';
+import {AuthUserContext} from '../Session';
 import styles from './.Navigation.css'
+import Dropdown from "react-bootstrap/Dropdown";
 
 
 //this function will decide on what navbar to show the user, depending on the level of authentication
@@ -17,58 +18,61 @@ const Navigation = () => (
     <AuthUserContext.Consumer>
         {authUser =>
             authUser ? (
-                <NavigationAuth authUser={authUser} />
+                <NavigationAuth authUser={authUser}/>
             ) : (
-                <NavigationNonAuth />
+                <NavigationNonAuth/>
             )
         }
     </AuthUserContext.Consumer>
 );
 
 // routes to show if user is logged in
-const NavigationAuth = ({ authUser }) => (
-    <div className="nav" >
-    <div style={styles.Navigation}>
-    <ul>
-        <li>
-            <Link to={ROUTES.LANDING}>Landing</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.HOME}>Home</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.ACCOUNT}>Account</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.SALEITEMS}>List of Local Barters</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.CHAT}>Chat</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.NEWITEM}>Add New Item for Barter</Link>
-        </li>
+const NavigationAuth = ({authUser}) => (
+    <div className="nav">
+        <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Menu
+            </Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item to={ROUTES.LANDING}>Landing</Dropdown.Item>
 
-        <li>
-            <SignOutButton />
-        </li>
-    </ul></div>
+                    <Dropdown.Item to={ROUTES.HOME}>Home</Dropdown.Item>
+
+
+                    <Dropdown.Item to={ROUTES.ACCOUNT}>Account</Dropdown.Item>
+
+
+                    <Dropdown.Item to={ROUTES.SALEITEMS}>List of Local Barters</Dropdown.Item>
+
+
+                    <Dropdown.Item to={ROUTES.CHAT}>Chat</Dropdown.Item>
+
+
+                    <Dropdown.Item to={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
+
+
+                    <Dropdown.Item> <SignOutButton/> </Dropdown.Item>
+
+        </Dropdown.Menu>
+        </Dropdown>
     </div>
-
 );
+
+
 // routes to show if no login
 const NavigationNonAuth = () => (
     <div className="nav">
-    <div style={styles.Navigation}>
-    <ul>
-        <li>
-            <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-        </li>
-        <li>
-            <Link to={ROUTES.LANDING}>Landing</Link>
-        </li>
-    </ul>
-    </div>
+        <Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Menu
+        </Dropdown.Toggle>
+            <Dropdown.Menu>
+
+                    <Dropdown.Item to={ROUTES.SIGN_IN}>Sign In</Dropdown.Item>
+
+                    <Dropdown.Item to={ROUTES.LANDING}>Landing</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
     </div>
 );
 

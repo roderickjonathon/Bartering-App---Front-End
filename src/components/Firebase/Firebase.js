@@ -15,11 +15,10 @@ const firebaseConfig = {
 };
 
 
-
 //This is the authentication interface for the React components that will connect to the Firebase API.
 //defines authentication methods
 class Firebase {
-    constructor(){
+    constructor() {
         app.initializeApp(firebaseConfig);
 
         this.auth = app.auth();
@@ -27,7 +26,6 @@ class Firebase {
         // this.storage = app.app.storage("gs://glasgowbarter.appspot.com/barter_img");
         // this.storageRef = this.storage.ref();
     }
-
 
 
     //create user function - uses Firebase API to authenticate
@@ -81,16 +79,12 @@ class Firebase {
         });
 
 
-
-
     // the paths in the ref() method match the location where users will be stored in Firebase API which follows REST philosophy
     user = uid => this.db.ref(`users/${uid}`);
     users = () => this.db.ref('users');
 
 
-
 }
 
 
-
-export default Firebase ;
+export default Firebase;

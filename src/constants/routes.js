@@ -7,4 +7,4 @@ export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
 export const SALEITEMS = '/saleitems';
 export const CHAT = '/chat';
-export const NEWITEM ='/new-item';
+export const NEWITEM = '/new-item';

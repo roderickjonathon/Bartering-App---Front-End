@@ -9,5 +9,5 @@ const Session = () => (
     </div>
 );
 
-export { AuthUserContext, withAuthentication, withAuthorization };
+export {AuthUserContext, withAuthentication, withAuthorization};
 export default Session;
