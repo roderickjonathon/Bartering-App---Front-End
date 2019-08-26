@@ -4,6 +4,7 @@ body {
     display: flex;
     color: white;
     font-weight: bolder;
+
 }
 
 /*form {*/
@@ -19,8 +20,9 @@ body {
     width: 50vw;
     font-size: larger;
     font-weight: bolder;
-    background-color: #72A1E5;
+    background-color: aquamarine;
     height: 8vh;
+    border-radius: 25px;
 }
 
 #root {
@@ -40,10 +42,13 @@ body {
 
 h2 {
     color: white;
+    font-size: 150%;
+    font-weight: bolder;
 }
 
 h1 {
     color: white;
+
 
 }
 
@@ -79,6 +84,8 @@ h1 {
 
 .btn-primary {
     background-color: lightpink;
+    font-size: 150%;
+    border-radius: 25px;
 }
 
 button.disabled {
@@ -98,4 +105,8 @@ form {
     flex-flow: column wrap;
     align-items: center;
     background-color: #9883E5;
+    border: solid white 5px;
+    border-radius: 105px;
+    margin: 15vh;
+
 }

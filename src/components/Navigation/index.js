@@ -53,7 +53,7 @@ const NavigationAuth = ({authUser}) => (
 
         </Dropdown.Menu>
         </Dropdown>
-        <Button id="dropdown-basic" href={ROUTES.NEWITEM}> Barter your own stuff </Button>
+        <Button id="dropdown-basic" href={ROUTES.NEWITEM}> View my barters </Button>
     </div>
 );
 

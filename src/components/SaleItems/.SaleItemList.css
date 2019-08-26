@@ -27,6 +27,7 @@ a {
 image {
     display: flex;
     justify-content: center;
+    image-resolution: inherit;
 
 }
 
@@ -50,8 +51,8 @@ image {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-size: larger;
-    border-radius: 105px;
+    /*font-size: larger;*/
+    /*font-size: 80%;*/
 }
 
 .component {
@@ -59,15 +60,5 @@ image {
     display: flex;
     justify-content: center;
 }
-
-ul {
-}
-
-
-/*$color1: rgba(46, 56, 46, 1);*/
-/*$color2: rgba(80, 201, 206, 1);*/
-/*$color3: rgba(114, 161, 229, 1);*/
-/*$color4: rgba(152, 131, 229, 1);*/
-/*$color5: rgba(252, 211, 222, 1);*/
 
 
