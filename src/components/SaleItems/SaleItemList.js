@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import SaleItem from './SaleItem.js';
-import styles from './.SaleItemList.css'
 import Carousel from "react-bootstrap/Carousel";
 
 
@@ -13,7 +12,7 @@ const SaleItemList = (props) => {
                     {props.saleItems.map((saleItem, index) => {
                         return (
                             <Carousel.Item key={index} className="component-item">
-                            <div className={styles.SaleItemList}>
+                            <div className="saleItem">
                                 <SaleItem saleItem={saleItem} user={props.user}/>
                             </div>
                         </Carousel.Item>

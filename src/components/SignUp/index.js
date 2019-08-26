@@ -10,13 +10,15 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const SignUpPage = () => (
-    <div>
-        <h2>Welcome to Glasgow Barter! Please sign Up to use our App.</h2>
+    <div id="sign-in">
+        <h1>Welcome to Glasgow Barter!</h1>
+        <h2> Please sign up to use our App.</h2>
         <SignUpForm/>
     </div>
 );
 
 const INITIAL_STATE = {
+
     displayName: '',
     email: '',
     passwordOne: '',

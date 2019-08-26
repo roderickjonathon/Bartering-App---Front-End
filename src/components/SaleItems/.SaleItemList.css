@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #9883E5;
     display: flex;
 }
 
@@ -27,6 +27,7 @@ a {
 image {
     display: flex;
     justify-content: center;
+
 }
 
 .col {

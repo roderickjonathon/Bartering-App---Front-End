@@ -14,7 +14,6 @@ import * as ROUTES from '../../constants/routes';
 import {withAuthentication} from '../Session';
 
 import styles from './.App.css';
-import Button from "react-bootstrap/Button";
 
 const App = () => (
     <Router>

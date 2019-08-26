@@ -66,10 +66,7 @@ const NavigationNonAuth = () => (
             Menu
         </Dropdown.Toggle>
             <Dropdown.Menu>
-
                     <Dropdown.Item href={ROUTES.SIGN_IN}>Sign In</Dropdown.Item>
-
-                    <Dropdown.Item href={ROUTES.LANDING}>Landing</Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
     </div>

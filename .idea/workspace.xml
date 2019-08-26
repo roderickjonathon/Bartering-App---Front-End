@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/.App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/.App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignIn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/.SaleItemList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/.SaleItemList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItemList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SignUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1PHPyFUQ7s67BaXWJVEnvWwaxz1" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -39,7 +48,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -92,7 +101,11 @@
       <workItem from="1565566426199" duration="33381000" />
       <workItem from="1565884426023" duration="1514000" />
       <workItem from="1565889941320" duration="8084000" />
-      <workItem from="1565905563431" duration="68684000" />
+      <workItem from="1565905563431" duration="70274000" />
+      <workItem from="1566307192005" duration="857000" />
+      <workItem from="1566309679482" duration="1758000" />
+      <workItem from="1566407536342" duration="79000" />
+      <workItem from="1566769680351" duration="2592000" />
     </task>
     <servers />
   </component>

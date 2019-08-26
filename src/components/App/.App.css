@@ -2,7 +2,16 @@
 body {
     background-color: #50C9CE;
     display: flex;
+    color: white;
+    font-weight: bolder;
 }
+
+/*form {*/
+/*display: flex;*/
+/*    flex-flow: column;*/
+/*    justify-content: center;*/
+
+/*}*/
 
 
 #dropdown-basic {
@@ -20,10 +29,28 @@ body {
 
 #formBasicEmail {
     width: 50vw;
+
+
+}
+
+.form-control {
+    width: 50vw;
+
 }
 
 h2 {
     color: white;
+}
+
+h1 {
+    color: white;
+
+}
+
+#passWordReset {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 #sign-in {
@@ -36,4 +63,39 @@ h2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+#sign-up-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 75vw;
+    margin-right: -100%;
+}
+
+.btn-primary.disabled {
+    background-color: lightpink;
+}
+
+.btn-primary {
+    background-color: lightpink;
+}
+
+button.disabled {
+    background-color: lightpink;
+}
+
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+.jumbotron {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #9883E5;
 }
