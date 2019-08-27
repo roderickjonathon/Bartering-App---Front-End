@@ -124,7 +124,6 @@ form {
     display: flex;
     align-items:  center;
     flex-flow: column wrap;
-    border: solid green 5px;
     margin: 0.5vh;
     min-width: 70vw;
 
