@@ -8,18 +8,14 @@ const AccountBarterList = (props) => {
     if (props.saleItems) {
         return (
             <Fragment>
-                <Carousel className="component-list" >
                     {props.saleItems.map((saleItem, index) => {
                         return (
-                            <Carousel.Item key={index} className="component-item">
                                 <div className="saleItem">
                                     <AccountBarterItem saleItem={saleItem} user={props.user}/>
                                 </div>
-                            </Carousel.Item>
                         )
                     })
                     }
-                </Carousel>
             </Fragment>
         )
     }
