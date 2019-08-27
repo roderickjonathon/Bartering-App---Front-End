@@ -117,14 +117,16 @@ form {
     display: flex;
     align-items:  center;
     flex-flow: column wrap;
-    border: white solid 5px;
+    /*border: white solid 5px;*/
 }
 
 .saleItem {
     display: flex;
     align-items:  center;
     flex-flow: column wrap;
-    /*border: solid green 5px;*/
+    border: solid green 5px;
+    margin: 0.5vh;
+    min-width: 50vw;
 
 }
 

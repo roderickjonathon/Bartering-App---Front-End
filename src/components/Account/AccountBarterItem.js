@@ -9,8 +9,6 @@ const AccountBarterItem = (props) => {
 
     if (props.saleItem.userEmail === props.user.email) {
 
-        console.log(props.user.email);
-
         return (
 
             <React.Fragment>
@@ -41,9 +39,8 @@ const AccountBarterItem = (props) => {
                 </Row>
             </React.Fragment>
         )
-
     } else {
-        return <h2>  </h2>
+        return null
     }
 };
 const condition = authUser => !!authUser;
