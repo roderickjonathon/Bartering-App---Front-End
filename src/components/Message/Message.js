@@ -1,3 +1,7 @@
+
+// NOTE: Feature still in development
+
+
 import React, {Component} from 'react';
 import './Message.css';
 import withAuthorization from "../Session/withAuthorization";

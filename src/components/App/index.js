@@ -25,7 +25,7 @@ const App = () => (
             <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage}/>
             <Route path={ROUTES.SALEITEMS} component={MainContainer}/>
             <Route path={ROUTES.NEWITEM} component={MainContainer}/>
-            <Route exact path={ROUTES.HOME} component={HomePage}/>
+            <Route exact path={ROUTES.HOME}  component={HomePage}/>
             <Route path={ROUTES.ACCOUNT} component={AccountPage}/>
             <Route path={ROUTES.ADMIN} component={AdminPage}/>
         </div>

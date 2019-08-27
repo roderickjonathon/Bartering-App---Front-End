@@ -6,10 +6,12 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 
-const HomePage = () => (
+const HomePage = (props, context) => (
+
+
     <Jumbotron>
-        <h1>Welcome to Glasgow Bartering!</h1>
-        <h3> Where would you like to go? </h3>
+
+        <h3>Welcome! Where would you like to go? { console.log(context)}  </h3>
         <Form.Group>
         <Button variant="primary" href="/saleitems"> Check out local items for barter</Button>
         </Form.Group>

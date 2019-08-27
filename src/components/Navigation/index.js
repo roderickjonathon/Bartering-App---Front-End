@@ -36,17 +36,13 @@ const NavigationAuth = ({authUser}) => (
 
                     <Dropdown.Item href={ROUTES.HOME}>Home</Dropdown.Item>
 
+                    <Dropdown.Item href={ROUTES.SALEITEMS}>Check out local barters</Dropdown.Item>
 
-                    <Dropdown.Item href={ROUTES.ACCOUNT}>Account</Dropdown.Item>
-
-
-                    <Dropdown.Item href={ROUTES.SALEITEMS}>List of Local Barters</Dropdown.Item>
-
+                    <Dropdown.Item href={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
 
                     <Dropdown.Item href={ROUTES.CHAT}>Chat(Coming soon!)</Dropdown.Item>
 
-
-                    <Dropdown.Item href={ROUTES.NEWITEM}>Add New Item for Barter</Dropdown.Item>
+                    <Dropdown.Item href={ROUTES.ACCOUNT}>Account options</Dropdown.Item>
 
 
                     <Dropdown.Item> <SignOutButton/> </Dropdown.Item>

@@ -20,7 +20,6 @@ const SaleItem = (props) => {
     return (
         <React.Fragment>
             <Jumbotron className="item" fluid>
-                {/*<Form >*/}
 
                     <Row className="justify-content-md-center">
                         <Col>
@@ -52,7 +51,6 @@ const SaleItem = (props) => {
                 <a href={"mailto:" + props.saleItem.userEmail}>Click here to contact for more info!</a>
                         </Col>
                     </Row>
-                {/*</Form>*/}
             </Jumbotron>
         </React.Fragment>
 

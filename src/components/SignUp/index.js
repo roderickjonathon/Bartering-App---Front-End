@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { withRouter} from 'react-router-dom';
 import {withFirebase} from '../Firebase';
-import firebase from 'firebase/app';
 
 
 import * as ROUTES from '../../constants/routes';
@@ -39,7 +38,7 @@ class SignUpFormBase extends Component {
     onSubmit = event => {
         const {displayName, email, passwordOne, isAdmin} = this.state;
         const roles = {};
-        //checking for admin privilages
+        //checking for admin privileges
         if (isAdmin) {
             roles[ROLES.ADMIN] = ROLES.ADMIN;
         }
@@ -63,13 +62,10 @@ class SignUpFormBase extends Component {
             })
             .catch(error => {
                 this.setState({error})
-            }).then(() => {
-            const user = firebase.auth().currentUser;
-            user.updateProfile({
-                displayName: this.state.displayName
-            })
+
         });
         event.preventDefault();
+
     };
     //function to set state with inputted values
     onChange = event => {
@@ -99,56 +95,44 @@ class SignUpFormBase extends Component {
         return (
             <Form onSubmit={this.onSubmit}>
                 <Form.Group>
-                <Form.Control
-                    name="displayName"
-                    value={displayName}
-                    onChange={this.onChange}
-                    type="text"
-                    placeholder="Username"
-                />
+                    <Form.Control
+                        name="displayName"
+                        value={displayName}
+                        onChange={this.onChange}
+                        type="text"
+                        placeholder="Username"
+                    />
                 </Form.Group>
 
                 <Form.Group>
-                <Form.Control
-                    name="email"
-                    value={email}
-                    onChange={this.onChange}
-                    type="text"
-                    placeholder="Email Address"
-                />
+                    <Form.Control
+                        name="email"
+                        value={email}
+                        onChange={this.onChange}
+                        type="text"
+                        placeholder="Email Address"
+                    />
                 </Form.Group>
 
                 <Form.Group>
-                <Form.Control
-                    name="passwordOne"
-                    value={passwordOne}
-                    onChange={this.onChange}
-                    type="password"
-                    placeholder="Password"
-                />
+                    <Form.Control
+                        name="passwordOne"
+                        value={passwordOne}
+                        onChange={this.onChange}
+                        type="password"
+                        placeholder="Password"
+                    />
                 </Form.Group>
 
                 <Form.Group>
-                <Form.Control
-                    name="passwordTwo"
-                    value={passwordTwo}
-                    onChange={this.onChange}
-                    type="password"
-                    placeholder="Confirm Password"
-                />
+                    <Form.Control
+                        name="passwordTwo"
+                        value={passwordTwo}
+                        onChange={this.onChange}
+                        type="password"
+                        placeholder="Confirm Password"
+                    />
                 </Form.Group>
-
-                {/*<label>*/}
-                {/*    Admin:*/}
-                {/*</label>*/}
-                {/*    <input*/}
-                {/*        name="isAdmin"*/}
-                {/*        type="checkbox"*/}
-                {/*        checked={isAdmin}*/}
-                {/*        onChange={this.onChangeCheckbox}*/}
-                {/*    />*/}
-
-
                 <Button disabled={isInvalid} type="submit">Sign Up</Button>
 
                 {error && <p>{error.message}</p>}
@@ -158,21 +142,6 @@ class SignUpFormBase extends Component {
     }
 }
 
-// const SignUpLink = () => (
-// //     <p>
-// //         Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
-// //     </p>
-// // );
-// // //gives the component access too all the properties of router using recompose
-// // //recompose organizes higher order components
-// // const SignUpForm = compose(
-// //     withRouter,
-// //     withFirebase,
-// // )(SignUpFormBase);
-// //
-// // export default SignUpPage;
-// //
-// // export { SignUpForm, SignUpLink };
 
 const SignUpLink = () => (
     <div id="sign-up-btn">

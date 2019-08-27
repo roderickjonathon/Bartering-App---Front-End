@@ -16,15 +16,14 @@ const firebaseConfig = {
 
 
 //This is the authentication interface for the React components that will connect to the Firebase API.
-//defines authentication methods
+// this class defines the required authentication methods provided by Firease
 class Firebase {
     constructor() {
         app.initializeApp(firebaseConfig);
 
         this.auth = app.auth();
         this.db = app.database();
-        // this.storage = app.app.storage("gs://glasgowbarter.appspot.com/barter_img");
-        // this.storageRef = this.storage.ref();
+
     }
 
 
@@ -51,6 +50,10 @@ class Firebase {
         this.auth.getCurrentUser();
 
 
+
+    //onAuthStateChanged receives a function as a prameter that has acess to the authenticated user.
+    // the passed function is called every time something changes for the user.
+    // becomes null upon signing out
     onAuthUserListener = (next, fallback) =>
         this.auth.onAuthStateChanged(authUser => {
             if (authUser) {
@@ -67,6 +70,7 @@ class Firebase {
                         // merge auth and db user
                         authUser = {
                             uid: authUser.uid,
+                            displayName: authUser.displayName,
                             email: authUser.email,
                             ...dbUser,
                         };
@@ -84,7 +88,7 @@ class Firebase {
     users = () => this.db.ref('users');
 
 
-}
 
+}
 
 export default Firebase;
