@@ -51,7 +51,8 @@ class SaleItemFormContainer extends Component {
     };
 
     render() {
-        return <div>
+        return <div className="barterForm">
+            <h1> What would you like to barter today? </h1>
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Control required type="text" placeholder="Item Name" name="itemName"/>
@@ -74,7 +75,7 @@ class SaleItemFormContainer extends Component {
                 <input  required type="file" onChange={this.fileSelectedHandler} value={this.selectedFile} name="img"/>
 
                 </Form.Group>
-                <Button disabled={this.state == null}  type="submit">Submit</Button>
+                <Button disabled={this.state == null}  type="submit" className="submitButton">Submit</Button>
             </Form>
 
         </div>

@@ -1,12 +1,12 @@
 
 body {
-    background-image: image("../../shapes1.jpg");
-    background-color: #50C9CE;
+    background-image: url("../../shapes1.jpg");
+    background-size: cover;
+    /*background-color: #50C9CE;*/
     display: flex;
     color: white;
     font-weight: bolder;
 }
-
 
 
 #dropdown-basic {
@@ -14,9 +14,10 @@ body {
     width: 50vw;
     font-size: larger;
     font-weight: bolder;
-    background-color: aquamarine;
+    background-color: lightpink;
     height: 8vh;
     border-radius: 25px;
+    border: white solid 8px;
 }
 
 #root {
@@ -71,6 +72,7 @@ h1 {
     flex-flow: column;
     width: 75vw;
     margin-right: -100%;
+
 }
 
 .btn-primary.disabled {
@@ -81,6 +83,8 @@ h1 {
     background-color: lightpink;
     font-size: 150%;
     border-radius: 25px;
+    border: white solid 8px;
+
 }
 
 button.disabled {
@@ -92,6 +96,7 @@ form {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    padding-top: 5vh;
 }
 
 
@@ -99,11 +104,13 @@ form {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    background-color: #9883E5;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     border: solid white 5px;
     border-radius: 105px;
     margin: 15vh;
-
+    min-width: 55vw;
+    min-height: 50vh;
 }
 
 .accountBarterList {
@@ -117,5 +124,18 @@ form {
     display: flex;
     align-items:  center;
     flex-flow: column wrap;
-    border: white solid 5px;
+    /*border: solid green 5px;*/
+
 }
+
+
+.barterForm {
+    padding-top: 4vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+

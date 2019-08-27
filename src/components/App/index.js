@@ -13,11 +13,10 @@ import MainContainer from '../../containers/MainContainer';
 import * as ROUTES from '../../constants/routes';
 import {withAuthentication} from '../Session';
 
-import styles from './.App.css';
 
 const App = () => (
     <Router>
-        <div className={styles.app}>
+        <div className="app">
             <Navigation/>
             <hr/>
             <Route path={ROUTES.SIGN_UP} component={SignUpPage}/>
