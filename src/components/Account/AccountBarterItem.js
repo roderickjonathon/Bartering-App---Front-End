@@ -12,7 +12,9 @@ const AccountBarterItem = (props) => {
         console.log(props.user.email);
 
         return (
+
             <React.Fragment>
+
                 <Row className="justify-content-md-center">
                     <Col>
                         <h2>
@@ -37,17 +39,11 @@ const AccountBarterItem = (props) => {
                         <p>{props.saleItem.barter}</p>
                     </Col>
                 </Row>
-
-                <Row>
-                    <Col className="justify-content-md-center">
-                        <a href={"mailto:" + props.saleItem.userEmail}>Click here to contact for more info!</a>
-                    </Col>
-                </Row>
             </React.Fragment>
         )
 
     } else {
-        return <h2> You have no barters! </h2>
+        return <h2>  </h2>
     }
 };
 const condition = authUser => !!authUser;

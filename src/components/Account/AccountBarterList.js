@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import withAuthorization from "../Session/withAuthorization";
-import Carousel from "react-bootstrap/Carousel";
 import AccountBarterItem from "./AccountBarterItem";
 
 const AccountBarterList = (props) => {
@@ -8,6 +7,7 @@ const AccountBarterList = (props) => {
     if (props.saleItems) {
         return (
             <Fragment>
+                <h1> My Barters </h1>
                     {props.saleItems.map((saleItem, index) => {
                         return (
                                 <div className="saleItem">

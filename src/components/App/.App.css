@@ -105,3 +105,17 @@ form {
     margin: 15vh;
 
 }
+
+.accountBarterList {
+    display: flex;
+    align-items:  center;
+    flex-flow: column wrap;
+    border: white solid 5px;
+}
+
+.saleItem {
+    display: flex;
+    align-items:  center;
+    flex-flow: column wrap;
+    border: white solid 5px;
+}

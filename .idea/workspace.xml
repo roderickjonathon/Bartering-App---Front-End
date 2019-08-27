@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/AccountBarterItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/.App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/.App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/AccountContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AccountContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +32,12 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1PHPyFUQ7s67BaXWJVEnvWwaxz1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,6 +105,7 @@
       <workItem from="1566309679482" duration="1758000" />
       <workItem from="1566407536342" duration="79000" />
       <workItem from="1566769680351" duration="19883000" />
+      <workItem from="1566905471631" duration="479000" />
     </task>
     <servers />
   </component>

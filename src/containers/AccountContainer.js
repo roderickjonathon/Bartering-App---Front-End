@@ -19,10 +19,9 @@ class AccountContainer extends Component {
     render () {
         return (
         <div className="accountBarterList">
-            <p> ACCOUNT CONTAINER</p>
-            <AccountPage/>
-            <AccountBarterList saleItems={this.props.saleItems} user={this.props.user}/>
 
+            <AccountBarterList saleItems={this.props.saleItems} user={this.props.user}/>
+            <AccountPage/>
         </div>
 
 
