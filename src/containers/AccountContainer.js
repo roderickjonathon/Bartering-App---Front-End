@@ -6,23 +6,13 @@ import AccountBarterList from "../components/Account/AccountBarterList";
 class AccountContainer extends Component {
 
 
-    fileDeleteHandler = () => {
-
-    };
-
-
-
-    render () {
+    render() {
         return (
-        <div className="accountBarterList">
-
-            <AccountBarterList saleItems={this.props.saleItems} user={this.props.user}/>
-            <AccountPage/>
-        </div>
-
-
+            <div className="accountBarterList">
+                <AccountBarterList saleItems={this.props.saleItems} user={this.props.user}/>
+                <AccountPage/>
+            </div>
         )
-
     }
 }
 

@@ -7,10 +7,12 @@ import SaleItemImage from "../SaleItems/SaleItemImage";
 
 const AccountBarterItem = (props) => {
 
-    if (props.saleItem.userEmail === props.user.email) {
 
+    const itemEmail = props.saleItem.userEmail;
+    const dbEmail = props.user.email;
+
+    if (itemEmail === dbEmail) {
         return (
-
             <React.Fragment>
 
                 <Row className="justify-content-md-center">

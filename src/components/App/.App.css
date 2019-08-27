@@ -116,7 +116,7 @@ form {
 .accountBarterList {
     display: flex;
     align-items:  center;
-    flex-flow: column wrap;
+    flex-flow: column;
     /*border: white solid 5px;*/
 }
 
@@ -126,7 +126,7 @@ form {
     flex-flow: column wrap;
     border: solid green 5px;
     margin: 0.5vh;
-    min-width: 50vw;
+    min-width: 70vw;
 
 }
 

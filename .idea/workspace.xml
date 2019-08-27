@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Account/AccountBarterItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/.App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/.App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/AccountContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AccountContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,7 @@
       <workItem from="1566309679482" duration="1758000" />
       <workItem from="1566407536342" duration="79000" />
       <workItem from="1566769680351" duration="19883000" />
-      <workItem from="1566905471631" duration="3683000" />
+      <workItem from="1566905471631" duration="5048000" />
     </task>
     <servers />
   </component>
