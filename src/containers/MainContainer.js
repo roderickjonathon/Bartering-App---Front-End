@@ -4,6 +4,7 @@ import Request from '../helpers/request.js'
 import SaleItemList from '../components/SaleItems/SaleItemList';
 import withAuthorization from "../components/Session/withAuthorization";
 import SaleItemFormContainer from "./SaleItemFormContainer.js";
+import AccountContainer from "./AccountContainer";
 
 
 class MainContainer extends Component {
@@ -64,6 +65,11 @@ class MainContainer extends Component {
                             <Route exact path="/new-item" render={(props) => {
                                 return <SaleItemFormContainer saleItems={this.state.saleItems} user={this.state.user}
                                                               />
+                            }}/>
+
+                            <Route exact path="/account-barters" render={(props) => {
+                                return <AccountContainer saleItems={this.state.saleItems} user={this.state.user} />
+
                             }}/>
                         </Switch>
                     </React.Fragment>

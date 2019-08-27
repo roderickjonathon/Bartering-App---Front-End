@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shapes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/AccountContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/.App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/.App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Firebase/Firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaleItems/SaleItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SaleItems/SaleItemForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Session/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Session/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Session/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignUp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Account" />
       <recent name="$PROJECT_DIR$/src/components/SaleItems" />
       <recent name="$PROJECT_DIR$/src/containers" />
       <recent name="$PROJECT_DIR$/src/helpers" />
@@ -112,7 +101,7 @@
       <workItem from="1566307192005" duration="857000" />
       <workItem from="1566309679482" duration="1758000" />
       <workItem from="1566407536342" duration="79000" />
-      <workItem from="1566769680351" duration="14462000" />
+      <workItem from="1566769680351" duration="16358000" />
     </task>
     <servers />
   </component>
