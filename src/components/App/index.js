@@ -13,6 +13,7 @@ import MainContainer from '../../containers/MainContainer';
 import * as ROUTES from '../../constants/routes';
 import {withAuthentication} from '../Session';
 
+import styles from './.App.css';
 
 const App = () => (
     <Router>
