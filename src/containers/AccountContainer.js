@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Request from "../helpers/request";
-import firebase from "firebase";
-import Button from "react-bootstrap/Button";
 import AccountPage from "../components/Account";
 import AccountBarterList from "../components/Account/AccountBarterList";
 
@@ -17,12 +14,14 @@ class AccountContainer extends Component {
 
     };
 
+
+
     render () {
         return (
         <div className="accountBarterList">
             <p> ACCOUNT CONTAINER</p>
             <AccountPage/>
-            <AccountBarterList/>
+            <AccountBarterList saleItems={this.props.saleItems} user={this.props.user}/>
 
         </div>
 

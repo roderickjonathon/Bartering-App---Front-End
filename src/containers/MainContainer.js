@@ -67,7 +67,7 @@ class MainContainer extends Component {
                                                               />
                             }}/>
 
-                            <Route exact path="/account-barters" render={(props) => {
+                            <Route exact path="/account" render={(props) => {
                                 return <AccountContainer saleItems={this.state.saleItems} user={this.state.user} />
 
                             }}/>

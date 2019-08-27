@@ -1,20 +1,19 @@
 import React, {Fragment} from 'react';
 import withAuthorization from "../Session/withAuthorization";
 import Carousel from "react-bootstrap/Carousel";
-import SaleItem from "../SaleItems/SaleItem";
+import AccountBarterItem from "./AccountBarterItem";
 
 const AccountBarterList = (props) => {
 
-    if(props.saleItems) {
-
+    if (props.saleItems) {
         return (
             <Fragment>
-                <Carousel className="component-list-account" >
+                <Carousel className="component-list" >
                     {props.saleItems.map((saleItem, index) => {
                         return (
                             <Carousel.Item key={index} className="component-item">
                                 <div className="saleItem">
-                                    <SaleItem saleItem={saleItem} user={props.user}/>
+                                    <AccountBarterItem saleItem={saleItem} user={props.user}/>
                                 </div>
                             </Carousel.Item>
                         )
@@ -22,14 +21,12 @@ const AccountBarterList = (props) => {
                     }
                 </Carousel>
             </Fragment>
-
         )
     }
+    };
 
 
-};
-
-
-export default withAuthorization(AccountBarterList);
+const condition = authUser => !!authUser;
+export default withAuthorization(condition)(AccountBarterList);
 
 

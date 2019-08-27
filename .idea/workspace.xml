@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2ccf4c-5609-44d8-90f4-ec2028b4b253" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/AccountContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/AccountBarterList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/AccountContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AccountContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +103,7 @@
       <workItem from="1566307192005" duration="857000" />
       <workItem from="1566309679482" duration="1758000" />
       <workItem from="1566407536342" duration="79000" />
-      <workItem from="1566769680351" duration="16358000" />
+      <workItem from="1566769680351" duration="18796000" />
     </task>
     <servers />
   </component>

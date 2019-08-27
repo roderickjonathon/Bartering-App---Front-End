@@ -6,7 +6,6 @@ import SignUpPage from '../SignUp';
 import SignInPage from '../SignIn';
 import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
-import AccountContainer from '../../containers/AccountContainer';
 import AdminPage from '../Admin';
 import MainContainer from '../../containers/MainContainer';
 
@@ -27,7 +26,7 @@ const App = () => (
             <Route path={ROUTES.SALEITEMS} component={MainContainer}/>
             <Route path={ROUTES.NEWITEM} component={MainContainer}/>
             <Route exact path={ROUTES.HOME}  component={HomePage}/>
-            <Route path={ROUTES.ACCOUNT} component={AccountContainer}/>
+            <Route path={ROUTES.ACCOUNT} component={MainContainer}/>
             <Route path={ROUTES.ADMIN} component={AdminPage}/>
         </div>
 
